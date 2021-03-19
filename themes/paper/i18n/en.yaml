@@ -1,5 +1,11 @@
 - id: prev_page
-  translation: "Prev Page"
+  translation: "上一頁"
 
 - id: next_page
-  translation: "Next Page"
+  translation: "下一頁"
+
+# - id: prev_page
+#   translation: "Prev Page"
+
+# - id: next_page
+#   translation: "Next Page"

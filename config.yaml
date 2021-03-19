@@ -2,6 +2,7 @@ baseURL: "https://blog.gnehs.net"
 title: 勝勝
 paginate: 5
 theme: paper
+languageCode: zh
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -11,7 +12,6 @@ buildExpired: false
 tags: ["blog", "company"]
 features: ["some", "awesome", "features"]
 
-lang: zh
 
 minify:
     disableXML: true
@@ -28,15 +28,15 @@ author:
 menu:
     main:
         - identifier: about
-          name: about
+          name: 關於可愛勝勝
           url: /about/
           weight: 0
         - identifier: categories
-          name: categories
+          name: 分類
           url: /categories/
           weight: 10
         - identifier: tags
-          name: tags
+          name: 標籤
           url: /tags/
           weight: 20
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
