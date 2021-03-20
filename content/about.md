@@ -1,5 +1,5 @@
 +++
-title = "關於勝勝"
+title = "關於可愛勝勝"
 description = "可愛蹦蹦前端仔"
 date = "2021-03-14" 
 type = "page"

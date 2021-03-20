@@ -1,6 +1,6 @@
 baseURL: "https://blog.gnehs.net"
 title: 勝勝
-paginate: 5
+paginate: 7
 theme: paper
 languageCode: zh-TW
 DisqusShortname: gnehs-blog
@@ -8,40 +8,26 @@ DisqusShortname: gnehs-blog
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
-buildExpired: false 
+buildExpired: false
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 permalinks:
   posts: "/:filename/"
   categories: "/categories/:slug/"
-  #tags: "/tags/:slug/"
 
 author:
   name: 勝勝
   homepage: https://gnehs.net
 menu:
-    main:
-        - identifier: about
-          name: 關於可愛勝勝
-          url: /about/
-          weight: 0
-        - identifier: categories
-          name: 分類
-          url: /categories/
-          weight: 10
-        #- identifier: tags
-          #  name: 標籤
-          #  url: /tags/
-          #  weight: 20
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+  main:
+    - identifier: about
+      name: 關於
+      url: /about/
+      weight: 0
+    - identifier: categories
+      name: 分類
+      url: /categories/
+      weight: 10
