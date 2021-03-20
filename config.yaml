@@ -2,7 +2,7 @@ baseURL: "https://blog.gnehs.net"
 title: 勝勝
 paginate: 5
 theme: paper
-languageCode: zh
+languageCode: zh-TW
 DisqusShortname: gnehs-blog
 
 enableRobotsTXT: true
