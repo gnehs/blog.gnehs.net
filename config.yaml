@@ -3,15 +3,12 @@ title: 勝勝
 paginate: 5
 theme: paper
 languageCode: zh
+DisqusShortname: gnehs-blog
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
-buildExpired: false
-
-tags: ["blog", "company"]
-features: ["some", "awesome", "features"]
-
+buildExpired: false 
 
 minify:
     disableXML: true
