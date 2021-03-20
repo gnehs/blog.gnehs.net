@@ -1,8 +1,7 @@
 ---
 title: '華為P9救磚(EVA-L09)'
 date: Tue, 28 Feb 2017 15:19:14 +0000
-draft: false
-tags: ['手機', '救磚', '教學']
+draft: false 
 categories: ['android']
 ---
 

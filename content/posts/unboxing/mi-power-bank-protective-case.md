@@ -2,7 +2,6 @@
 title: '小米行動電源10000 高配版 保護套 開箱'
 date: Fri, 02 Feb 2018 06:04:11 +0000
 draft: false
-tags: ['開箱']
 categories: ['unboxing']
 ---
 

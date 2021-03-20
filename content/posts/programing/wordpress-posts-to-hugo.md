@@ -2,7 +2,6 @@
 title: '將 WordPress 文章匯入到 Hugo'
 date: 2021-03-14T21:31:50+08:00
 draft: false
-tags: ['教學']
 categories: ['hugo']
 ---
 

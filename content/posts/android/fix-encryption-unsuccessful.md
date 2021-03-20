@@ -2,7 +2,6 @@
 title: '解決刷機產生的Data分區加密問題'
 date: Tue, 28 Feb 2017 03:07:59 +0000
 draft: false
-tags: ['TWRP', '加密', '手機', '教學']
 categories: ['android']
 ---
 

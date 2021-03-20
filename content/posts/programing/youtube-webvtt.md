@@ -2,7 +2,6 @@
 title: 'YouTube 字幕特效是如何製作的？'
 date: Tue, 29 Jan 2019 15:21:05 +0000
 draft: false
-tags: ['教學']
 categories: ['web']
 ---
 

@@ -2,7 +2,6 @@
 title: '透過 JS 即時偵測系統外觀是否處於深色模式'
 date: Sat, 14 Dec 2019 12:36:43 +0000
 draft: false
-tags: ['js', '教學']
 categories: ['js','web']
 ---
 

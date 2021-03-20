@@ -2,7 +2,6 @@
 title: 'Nokia N1 B19 救磚'
 date: Sun, 15 Apr 2018 08:46:17 +0000
 draft: false
-tags: ['救磚', '教學']
 categories: ['android']
 ---
 
