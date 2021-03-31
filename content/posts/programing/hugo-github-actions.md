@@ -51,5 +51,9 @@ jobs:
 
 接下來僅需幾個步驟即可讓部落格上線！
 
+在 Repo 頁面的上方標前欄中選擇 Settings 在下面你可以找到 GitHub Pages 區塊。
+
 - Source: 選擇 public
 - Custom domain: 若你想放在自訂域名上你要填寫這項，並參考 [Configuring a custom domain for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site) 來設定你域名的 DNS
+
+都填好後按下 Save 你的部落格就正式上線了！
