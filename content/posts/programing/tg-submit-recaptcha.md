@@ -1,5 +1,5 @@
 ---
-title: '一起來幫網站加入 reCAPTCHA 吧'
+title: '發送 XHR 時驗證 reCAPTCHA'
 date: Sun, 05 May 2019 04:08:28 +0000
 draft: false
 categories: ['js','web','node']
