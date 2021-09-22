@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/js/</link>
+    <description>Recent content in js on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 06 Jun 2020 15:18:14 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用 Javascript 將多部影片混合為一個影片</title>
+      <link>https://blog.gnehs.net/js-merge-video/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-merge-video/</guid>
+      <description>最近在製作 How 發聲器 因為影片每個發音播放時都會有間隙，超討厭，但 How哥產生器 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。
+我先說，這真的有夠搞剛，超級無敵麻煩，另外，如果你用 Node.js 用 fluent-ffmpeg 就好了。
+在尋找的時候看到這個 How do i append two video files data to a source buffer using media source api? ，而且下面的 解法 還會動，甚至支援不同尺寸影片混合，所以我把它偷過來就好了嗎。
+錯誤！ 他根本不會動，只知道不停地噴錯，明明我放的跟他一樣都是 MP4，我完全不知道他 Demo 怎麼會動 解法 在網路上尋找不同解法後，看了這篇文章「Transcoding assets for Media Source Extensions」，發現是 MP4 少了幾個 Flag 以及 codec 要自己拿 MP4Box 看了之後填進程式碼，拿 ffmpeg 處理過後就會動了。
+結果處理時加這行就好了 -movflags frag_keyframe+empty_moov+default_base_moof ，害我花了快半天，真棒 Demo 你可以使用 Chrome 查看 How 發聲器
+雖然有點音聲不同步，算了隨便啦</description>
+    </item>
+    
+    <item>
+      <title>在 PWA 應用程式中使用遮罩圖示（maskable icon）</title>
+      <link>https://blog.gnehs.net/pwa-maskable-icon/</link>
+      <pubDate>Sun, 22 Dec 2019 10:28:35 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/pwa-maskable-icon/</guid>
+      <description>Chrome 最近釋出 79 版，終於支援了遮罩圖示（看看 Android 8 都出多久了），這篇教學會教你如何使用遮罩圖示。
+準備清單  已更新 Chrome 79 的 Android 手機 要修改的 PWA 應用程式  圖示製作 要製作圖示必須保留相對應的安全區域，免得要顯示的內容被裁掉。
+你可以在 Maskable​.app 預覽套用後的效果 修改 manifest.json 將 icons 中的圖示標示 &amp;quot;purpose&amp;quot;: &amp;quot;maskable&amp;quot; 便可以使用遮罩了
+{ &amp;quot;scope&amp;quot;: &amp;quot;/&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;PokaPlayer&amp;quot;, &amp;quot;short_name&amp;quot;: &amp;quot;PokaPlayer&amp;quot;, &amp;quot;icons&amp;quot;: [{ &amp;quot;src&amp;quot;: &amp;quot;./img/icons/icon.png&amp;quot;, &amp;quot;sizes&amp;quot;: &amp;quot;512x512&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;image/png&amp;quot; }, { &amp;quot;src&amp;quot;: &amp;quot;./img/icons/icon-maskable.png&amp;quot;, &amp;quot;sizes&amp;quot;: &amp;quot;512x512&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;image/png&amp;quot;, &amp;quot;purpose&amp;quot;: &amp;quot;maskable&amp;quot; } ], &amp;quot;start_url&amp;quot;: &amp;quot;/&amp;quot;, &amp;quot;display&amp;quot;: &amp;quot;standalone&amp;quot;, &amp;quot;background_color&amp;quot;: &amp;quot;#2f2b3e&amp;quot;, &amp;quot;theme_color&amp;quot;: &amp;quot;#ffffff&amp;quot; } 在手機上查看套用效果 套用成功了 參考資料</description>
+    </item>
+    
+    <item>
+      <title>透過 JS 即時偵測系統外觀是否處於深色模式</title>
+      <link>https://blog.gnehs.net/js-detect-dark-mode/</link>
+      <pubDate>Sat, 14 Dec 2019 12:36:43 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-detect-dark-mode/</guid>
+      <description>在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 prefers-color-scheme: dark 來檢測是否適用於該條規則，我們可以在 js 使用 matchMedia 來查看檢測後的結果。
+ 程式碼如下
+const darkModeMediaQuery = window.matchMedia(`(prefers-color-scheme: dark)`); darkModeMediaQuery.addListener(e =&amp;gt; { //當系統變更主題時都會執行這裡 const darkMode = e.matches; // darkMode: [true(深色主題開啟)|false(深色主題關閉)] }); </description>
+    </item>
+    
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。
+最近在幫 Telegram 蒐集君 寫提交工具，因為驗證碼很麻煩，自己也懶得打所以直接拿 reCAPTCHA 來用了，由於使用 XHR 提交資料，因此 reCAPTCHA 的部分需要稍稍改寫才能夠正常運作。
+始步：在 reCAPTCHA 註冊新的網站 要使用 reCAPTCHA，必須要先到 Google 註冊才能夠使用，以下是註冊流程。
+註冊新網站：https://www.google.com/recaptcha/admin/create
+標籤：填入自己方便記憶的名稱即可
+類型：選 v3
+網域：輸入自己要用的網域，如果你要在本地測試，可以再加上 localhost
+全部輸入完成後按下下方的「提交」即可
+註冊完成後，你會拿到兩串金鑰，請好好保存，其中密鑰不能給他人知道。
+加入 reCAPTCHA 到前端頁面吧！ 把下面的程式碼貼到你的網頁中吧！別忘了將 reCAPTCHA_site_key 換成你的網站金鑰
+&amp;lt;script src=&amp;quot;https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; grecaptcha.ready(function() { grecaptcha.execute(&#39;reCAPTCHA_site_key&#39;, {action: &#39;homepage&#39;}).then(token =&amp;gt; { //這裡拿到的 token 要在 XHR 請求時也發給伺服器驗證 }); }); &amp;lt;/script&amp;gt; 完成後，應該就能在網頁右下角看見 reCAPTCHA 的標誌了
+完成後端驗證 發送請求的方式百百種，因為我的後端語言用 node.js 所以就拿 request-promise 來送請求。
+*請自行修改程式碼以符合需求
+const rp = require(&amp;quot;request-promise&amp;quot;) let result = await rp({ method: &#39;post&#39;, uri: &amp;quot;https://www.</description>
+    </item>
+    
+    <item>
+      <title>讓 node-sass-middleware 轉換 SASS</title>
+      <link>https://blog.gnehs.net/node-sass-middleware/</link>
+      <pubDate>Sun, 02 Dec 2018 14:25:04 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/node-sass-middleware/</guid>
+      <description>最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案
+後來努力去看了一下文件，發現是這樣的
+  indentedSyntax - [true | false], false by default. Compiles files with the .sass extension instead of .scss in the src directory.   幹誰會知道一個拿 SASS 取名的東西預設會是吃 SCSS 啦
+所以你如果要讓他吃 SASS，你要這樣寫
+app.use(sassMiddleware({ src: __dirname + &#39;/sass&#39;, dest: __dirname + &#39;/public/css&#39;, outputStyle: &#39;compressed&#39;, indentedSyntax: true, prefix: &#39;/css&#39; })); </description>
+    </item>
+    
+  </channel>
+</rss>

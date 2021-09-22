@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/game/</link>
+    <description>Recent content in game on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 27 Jun 2017 16:12:12 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[64位元]將模擬市民 2 語言更改為繁體中文</title>
+      <link>https://blog.gnehs.net/the-sims-2-change-lang/</link>
+      <pubDate>Tue, 27 Jun 2017 16:12:12 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/the-sims-2-change-lang/</guid>
+      <description>最近想來玩一下，但是不知道出了什麼差錯，居然變成了英文，然後網上的教學都不管用，因為我是 64 位元的 QQQ 好了，廢話不多說，按下&amp;quot;Win&amp;quot;+&amp;ldquo;R&amp;quot;鍵後輸入&amp;quot;regedit&amp;quot;來打開登錄檔編輯程式 進到&amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\EA GAMES\The Sims 2 Mansion and Garden Stuff\1.0&amp;quot;裡面 *The Sims 2 Mansion and Garden Stuff 為你電腦裡最新安裝的 資料片/物品包 名稱 雙擊&amp;quot;Language&amp;rdquo;，確定底數是&amp;quot;十六進位&amp;quot;後將裏頭的數字改為&amp;quot;12&amp;quot; 接著雙擊&amp;quot;LanguageName&amp;quot;，將資料改成&amp;quot;Traditional Chinese&amp;quot; 弄好之後就能打包走人了www
+ 附上懶人登錄檔，把裏頭的內容貼到記事本存成 xxx.reg 就能用了，如果你真她喵懶的話，點這裡直接下載</description>
+    </item>
+    
+  </channel>
+</rss>

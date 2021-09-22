@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>node on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/node/</link>
+    <description>Recent content in node on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 05 May 2019 04:08:28 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。
+最近在幫 Telegram 蒐集君 寫提交工具，因為驗證碼很麻煩，自己也懶得打所以直接拿 reCAPTCHA 來用了，由於使用 XHR 提交資料，因此 reCAPTCHA 的部分需要稍稍改寫才能夠正常運作。
+始步：在 reCAPTCHA 註冊新的網站 要使用 reCAPTCHA，必須要先到 Google 註冊才能夠使用，以下是註冊流程。
+註冊新網站：https://www.google.com/recaptcha/admin/create
+標籤：填入自己方便記憶的名稱即可
+類型：選 v3
+網域：輸入自己要用的網域，如果你要在本地測試，可以再加上 localhost
+全部輸入完成後按下下方的「提交」即可
+註冊完成後，你會拿到兩串金鑰，請好好保存，其中密鑰不能給他人知道。
+加入 reCAPTCHA 到前端頁面吧！ 把下面的程式碼貼到你的網頁中吧！別忘了將 reCAPTCHA_site_key 換成你的網站金鑰
+&amp;lt;script src=&amp;quot;https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; grecaptcha.ready(function() { grecaptcha.execute(&#39;reCAPTCHA_site_key&#39;, {action: &#39;homepage&#39;}).then(token =&amp;gt; { //這裡拿到的 token 要在 XHR 請求時也發給伺服器驗證 }); }); &amp;lt;/script&amp;gt; 完成後，應該就能在網頁右下角看見 reCAPTCHA 的標誌了
+完成後端驗證 發送請求的方式百百種，因為我的後端語言用 node.js 所以就拿 request-promise 來送請求。
+*請自行修改程式碼以符合需求
+const rp = require(&amp;quot;request-promise&amp;quot;) let result = await rp({ method: &#39;post&#39;, uri: &amp;quot;https://www.</description>
+    </item>
+    
+    <item>
+      <title>讓 node-sass-middleware 轉換 SASS</title>
+      <link>https://blog.gnehs.net/node-sass-middleware/</link>
+      <pubDate>Sun, 02 Dec 2018 14:25:04 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/node-sass-middleware/</guid>
+      <description>最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案
+後來努力去看了一下文件，發現是這樣的
+  indentedSyntax - [true | false], false by default. Compiles files with the .sass extension instead of .scss in the src directory.   幹誰會知道一個拿 SASS 取名的東西預設會是吃 SCSS 啦
+所以你如果要讓他吃 SASS，你要這樣寫
+app.use(sassMiddleware({ src: __dirname + &#39;/sass&#39;, dest: __dirname + &#39;/public/css&#39;, outputStyle: &#39;compressed&#39;, indentedSyntax: true, prefix: &#39;/css&#39; })); </description>
+    </item>
+    
+  </channel>
+</rss>

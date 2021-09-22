@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/iot/</link>
+    <description>Recent content in IoT on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 22 Sep 2021 09:30:57 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/iot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Home Assistant 中顯示 BTC 等虛擬貨幣價格</title>
+      <link>https://blog.gnehs.net/add-btc-to-ha/</link>
+      <pubDate>Wed, 22 Sep 2021 09:30:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/add-btc-to-ha/</guid>
+      <description>在 configuration.yaml 中加入以下設定：
+rest: - scan_interval: 60 resource: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&amp;amp;ids=bitcoin%2Cethereum%2Cbinance-coin%2Csolana&amp;amp;order=market_cap_desc&amp;amp;sparkline=false&amp;amp;price_change_percentage=1d sensor: - name: BTC json_attributes_path: &amp;#34;$[0]&amp;#34; value_template: &amp;#34;{{ value_json[0].current_price }}&amp;#34; unit_of_measurement: USD json_attributes: - id - current_price - price_change_percentage_24h - last_updated - name: ETH json_attributes_path: &amp;#34;$[1]&amp;#34; value_template: &amp;#34;{{ value_json[1].current_price }}&amp;#34; unit_of_measurement: USD json_attributes: - id - current_price - price_change_percentage_24h - last_updated - name: SOL json_attributes_path: &amp;#34;$[2]&amp;#34; value_template: &amp;#34;{{ value_json[2].current_price }}&amp;#34; unit_of_measurement: USD json_attributes: - id - current_price - price_change_percentage_24h - last_updated 即可看到貨幣出現在 Sensor 之中。 </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/</link>
+    <description>Recent content in Categories on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 22 Sep 2021 09:30:57 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IoT</title>
+      <link>https://blog.gnehs.net/categories/iot/</link>
+      <pubDate>Wed, 22 Sep 2021 09:30:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://blog.gnehs.net/categories/hugo/</link>
+      <pubDate>Wed, 31 Mar 2021 11:17:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://blog.gnehs.net/categories/js/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://blog.gnehs.net/categories/web/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>https://blog.gnehs.net/categories/node/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://blog.gnehs.net/categories/android/</link>
+      <pubDate>Sun, 15 Apr 2018 08:46:17 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unboxing</title>
+      <link>https://blog.gnehs.net/categories/unboxing/</link>
+      <pubDate>Fri, 02 Feb 2018 06:04:11 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/unboxing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://blog.gnehs.net/categories/game/</link>
+      <pubDate>Tue, 27 Jun 2017 16:12:12 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/categories/game/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

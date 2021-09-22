@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/android/</link>
+    <description>Recent content in android on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 15 Apr 2018 08:46:17 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nokia N1 B19 救磚</title>
+      <link>https://blog.gnehs.net/nokia-n1-b19/</link>
+      <pubDate>Sun, 15 Apr 2018 08:46:17 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/nokia-n1-b19/</guid>
+      <description>我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 adb sideload 了 思路是這樣的
+ 於 boot 分區刷入官方 Recovery 使用 adb sideload 刷入官方更新檔 刷回原本的 boot 分區  準備材料
+ 官方 B19 更新檔 &amp;amp; 官方 Recovery &amp;amp; boot.img fastboot &amp;amp; adb 一台已解鎖的 N1(解鎖很簡單，不用我多說了吧)  1.首先將平板關機，接著長按 電源鍵 ＋ 音量下，直到可愛的 Android 機器人出現 2.將平板接上電腦，輸入 fastboot flash boot &amp;lt;官方 Recovery&amp;gt; 來把 boot 刷入 Recovery（因官方不給刷 Recovery 分區），然後選擇 NORMAL BOOT 進入 Recovery 3.這時會看到一隻躺著的 Android 機器人，按 電源鍵 ＋ 音量上 後會看到 Recovery 介面，利用音量上下鍵將選項選到 apply update from ADB 並按下電源鍵 4.</description>
+    </item>
+    
+    <item>
+      <title>華為P9救磚(EVA-L09)</title>
+      <link>https://blog.gnehs.net/dload-eva-l09/</link>
+      <pubDate>Tue, 28 Feb 2017 15:19:14 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/dload-eva-l09/</guid>
+      <description>標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用 若因本教學造成手機損毀恕不負責 首先，先把檔案下載下來
+ 載點:dload-huawei-p9-eval09-eva-b136.zip 原址:Stock ROM dload file - P9 EVA-L09 B136
+ 接著，把壓縮檔內的&amp;quot;dload&amp;quot;資料夾整個放進你的SD卡根目錄並將SD卡放回手機 同時按下&amp;quot;電源鍵&amp;quot;&amp;amp;&amp;ldquo;音量+&amp;quot;&amp;amp;&amp;ldquo;音量-&amp;rdquo; 接著就會進入 eRecovery 模式，手機會自己開始刷機 出現 OK 就好了!</description>
+    </item>
+    
+    <item>
+      <title>解決刷機產生的Data分區加密問題</title>
+      <link>https://blog.gnehs.net/fix-encryption-unsuccessful/</link>
+      <pubDate>Tue, 28 Feb 2017 03:07:59 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/fix-encryption-unsuccessful/</guid>
+      <description>我是不知道其他系統或手機能不能用啦，反正我 P9 是成功了 就是這個 Encryption Unsuccessful 害我浪費了一小時生命 :( 首先進入TWRP，選&amp;quot;Wipe&amp;quot; 選&amp;quot;Advanced Wipe&amp;quot; &amp;ldquo;Data&amp;quot;分區打勾，進入&amp;quot;Repair or Change File System&amp;rdquo; 選&amp;quot;Change File System&amp;quot; 選&amp;quot;F2FS&amp;quot; *我是不知道為什麼要選 F2FS 啦，也許你可以試試其他的 滑過去就好了 參考文章 &amp;ldquo;Encryption Unsuccessful&amp;rdquo; CROMBI-KK and GRIMKERNEL [How To] Install OxygenOS 2.2.0 Update (Root/Non Root Users) Without Data Loss!!</description>
+    </item>
+    
+  </channel>
+</rss>
