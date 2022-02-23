@@ -1,1 +1,9 @@
 /* Place a custom css file in your own project to use this. */
+.post-header {
+  border-left: 4px solid var(--tertiary);
+  padding-left: 8px;
+}
+
+.post-title {
+  font-size: 32px;
+}
