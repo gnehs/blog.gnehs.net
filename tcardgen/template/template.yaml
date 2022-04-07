@@ -19,7 +19,7 @@ info:
 category:
   start:
     px: 100
-    py: 106
+    py: 110
   fgHexColor: "#FFFFFF"
   fontSize: 36
   fontStyle: Light
