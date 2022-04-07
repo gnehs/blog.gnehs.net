@@ -15,6 +15,10 @@ jobs:
         uses: actions/setup-go@v3
         with:
           go-version: '1.17.8'
+      - name: Setup Node v16
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.13.1'
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -26,6 +30,8 @@ jobs:
         run: tcardgen -f ./tcardgen/font -o ./static/img -c ./tcardgen/template/template.yaml -t ./tcardgen/template/template.png ./content/posts/**/*.md
       - name: Build
         run: hugo --gc --minify --cleanDestinationDir
+      - name: Compress Image
+        run: find . -name "*.png" -exec bash -c 'file="{}"; npx @squoosh/cli --oxipng auto "$file"' \;
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
