@@ -1,25 +1,25 @@
 template: template.png
 title:
   start:
-    px: 104
-    py: 100
+    px: 100
+    py: 160
   fgHexColor: "#FFFFFF"
-  fontSize: 72
+  fontSize: 96
   fontStyle: Medium
-  maxWidth: 992
+  maxWidth: 860
   lineSpacing: 10
 info:
   start:
-    px: 104
-    py: 497
+    px: 100
+    py: 474
   fgHexColor: "#FFFFFF"
   fontSize: 36
   fontStyle: Light
-  separator: " | "
+  separator: " - "
 category:
   start:
-    px: 104
-    py: 542
+    px: 100
+    py: 119
   fgHexColor: "#FFFFFF"
   fontSize: 36
   fontStyle: Light
