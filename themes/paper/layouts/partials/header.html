@@ -33,6 +33,9 @@
   {{- template "_internal/google_analytics_async.html" . }}
   {{- template "_internal/opengraph.html" . }}
   {{- end }}
+  {{- if eq .Kind "page" }}
+  <meta property="og:image" content="http://blog.gnehs.net/img/{{ .File.BaseFileName }}.png" />
+  {{- end }}
   <!-- Script -->
   <script>
     function setTheme() {
