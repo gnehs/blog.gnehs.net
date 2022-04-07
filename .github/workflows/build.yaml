@@ -11,6 +11,10 @@ jobs:
       - uses: actions/checkout@v1
         with:
           submodules: true
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '>=1.17.0'
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -19,7 +23,7 @@ jobs:
       - name: Install
         run: go get github.com/Ladicle/tcardgen
       - name: Generate Open Graph Images
-        run: tcardgen -f ./tcardgen/font -o ./static/img -t ./tcardgen/template.yaml ./content/posts/**/*.md
+        run: tcardgen -f ./tcardgen/font -o ./static/img -c ./tcardgen/template/template.yaml -t ./tcardgen/template/template.png ./content/posts/**/*.md
       - name: Build
         run: hugo --gc --minify --cleanDestinationDir
       - name: Deploy

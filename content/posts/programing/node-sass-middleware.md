@@ -1,6 +1,8 @@
 ---
 title: '讓 node-sass-middleware 轉換 SASS'
-date: Sun, 02 Dec 2018 14:25:04 +0000
+author: '勝勝'
+tags: ['sass'] 
+date: 2018-12-02T08:46:59+00:00
 draft: false
 categories: ['js','node']
 ---

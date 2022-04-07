@@ -1,5 +1,7 @@
 ---
 title: '將 WordPress 文章匯入到 Hugo'
+author: '勝勝'
+tags: ['WordPress']
 date: 2021-03-14T21:31:50+08:00
 draft: false
 categories: ['hugo']

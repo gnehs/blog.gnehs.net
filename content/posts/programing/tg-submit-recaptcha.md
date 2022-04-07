@@ -1,6 +1,8 @@
 ---
 title: '發送 XHR 時驗證 reCAPTCHA'
-date: Sun, 05 May 2019 04:08:28 +0000
+author: '勝勝'
+tags: ['reCAPTCHA'] 
+date: 2019-05-05T04:08:28+00:00
 draft: false
 categories: ['js','web','node']
 ---

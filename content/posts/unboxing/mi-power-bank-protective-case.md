@@ -1,6 +1,8 @@
 ---
-title: '小米行動電源10000 高配版 保護套 開箱'
-date: Fri, 02 Feb 2018 06:04:11 +0000
+title: '小米行動電源 10000 高配版 保護套 開箱'
+author: '勝勝'
+tags: ['小米'] 
+date: 2018-02-02T06:04:11+00:00
 draft: false
 categories: ['unboxing']
 ---

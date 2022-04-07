@@ -1,6 +1,8 @@
 ---
 title: '在 PWA 應用程式中使用遮罩圖示（maskable icon）'
-date: Sun, 22 Dec 2019 10:28:35 +0000
+author: '勝勝'
+tags: ['PWA'] 
+date: 2019-12-22T10:28:35+08:00
 draft: false
 categories: ['js']
 ---

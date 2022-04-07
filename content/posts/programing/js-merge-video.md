@@ -1,6 +1,8 @@
 ---
 title: '如何使用 Javascript 將多部影片混合為一個影片'
-date: Sat, 06 Jun 2020 15:18:14 +0000
+author: '勝勝'
+tags: ['js'] 
+date: 2020-06-06T15:18:14+08:00
 draft: false
 categories: ['js','web']
 ---

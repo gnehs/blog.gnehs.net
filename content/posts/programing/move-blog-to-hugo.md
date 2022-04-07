@@ -1,5 +1,7 @@
 ---
 title: '將部落格遷移到 Hugo'
+author: '勝勝'
+tags: ['Hugo']
 date: 2021-03-20T15:30:50+08:00
 draft: false
 categories: ['hugo']

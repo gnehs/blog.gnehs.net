@@ -1,6 +1,8 @@
 ---
 title: 'Nokia N1 B19 救磚'
-date: Sun, 15 Apr 2018 08:46:17 +0000
+author: '勝勝'
+tags: ['Nokia N1'] 
+date: 2018-04-15T08:46:59+00:00
 draft: false
 categories: ['android']
 ---

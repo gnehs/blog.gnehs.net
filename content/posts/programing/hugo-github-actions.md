@@ -1,5 +1,7 @@
 ---
 title: '利用 GitHub Action 自動部署 Hugo 部落格'
+author: '勝勝'
+tags: ['actions','hugo']
 date: 2021-03-31T11:17:50+08:00
 draft: false
 categories: ['hugo']

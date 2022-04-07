@@ -1,6 +1,8 @@
 ---
 title: '解決刷機產生的Data分區加密問題'
-date: Tue, 28 Feb 2017 03:07:59 +0000
+author: '勝勝'
+tags: ['root','TWRP','F2FS'] 
+date: 2017-02-28T03:07:59+08:00
 draft: false
 categories: ['android']
 ---

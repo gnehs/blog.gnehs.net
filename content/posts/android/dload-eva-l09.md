@@ -1,6 +1,8 @@
 ---
 title: '華為P9救磚(EVA-L09)'
-date: Tue, 28 Feb 2017 15:19:14 +0000
+author: '勝勝'
+tags: ['dload'] 
+date: 2017-02-28T15:19:14+08:00
 draft: false 
 categories: ['android']
 ---

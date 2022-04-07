@@ -1,40 +1,40 @@
-template: template.jpg
+template: template.png
 title:
   start:
     px: 104
     py: 100
-  fgHexColor: "#FFF"
+  fgHexColor: "#FFFFFF"
   fontSize: 72
-  fontStyle: Bold
+  fontStyle: Medium
   maxWidth: 992
   lineSpacing: 10
 info:
   start:
     px: 104
-    py: 517
-  fgHexColor: "#FFF"
+    py: 497
+  fgHexColor: "#FFFFFF"
   fontSize: 36
-  fontStyle: Regular
-  separator: " - "
+  fontStyle: Light
+  separator: " | "
 category:
   start:
     px: 104
-    py: 562
-  fgHexColor: "#FFF"
+    py: 542
+  fgHexColor: "#FFFFFF"
   fontSize: 36
-  fontStyle: Regular
-# tags:
-#   start:
-#     px: 104
-#     py: 562
-#   fgHexColor: "#FFFFFF"
-#   bgHexColor: "#7F7776"
-#   fontSize: 36
-#   fontStyle: Medium
-#   boxAlign: Left
-#   boxSpacing: 6
-#   boxPadding:
-#     top: 6
-#     right: 10
-#     bottom: 6
-#     left: 8
+  fontStyle: Light
+tags:
+  start:
+    px: 9999
+    py: 9999
+  fgHexColor: "#FFFFFF"
+  bgHexColor: "#7F7776"
+  fontSize: 36
+  fontStyle: Light
+  boxAlign: Left
+  boxSpacing: 6
+  boxPadding:
+    top: 6
+    right: 10
+    bottom: 6
+    left: 8

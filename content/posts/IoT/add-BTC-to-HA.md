@@ -1,5 +1,7 @@
 ---
 title: "在 Home Assistant 中顯示 BTC 等虛擬貨幣價格"
+author: '勝勝'
+tags: ['HA']
 date: 2021-09-22T09:30:57+08:00
 draft: false
 categories: ['IoT']

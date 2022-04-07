@@ -1,6 +1,8 @@
 ---
 title: '[64位元]將模擬市民 2 語言更改為繁體中文'
-date: Tue, 27 Jun 2017 16:12:12 +0000
+author: '勝勝'
+tags: ['sims2'] 
+date: 2017-06-27T16:12:12+08:00
 draft: false
 categories: ['game']
 ---
