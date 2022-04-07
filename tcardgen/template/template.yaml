@@ -11,7 +11,7 @@ title:
 info:
   start:
     px: 100
-    py: 106
+    py: 474
   fgHexColor: "#FFFFFF"
   fontSize: 36
   fontStyle: Light
@@ -19,7 +19,7 @@ info:
 category:
   start:
     px: 100
-    py: 119
+    py: 106
   fgHexColor: "#FFFFFF"
   fontSize: 36
   fontStyle: Light
