@@ -6,6 +6,8 @@ date: 2021-09-22T09:30:57+08:00
 draft: false
 categories: ['IoT']
 ---
+這篇文章將教您如何在 Home Assistant 中顯示 BTC 等虛擬貨幣價格。
+<!--more-->
 ![](https://user-images.githubusercontent.com/16719720/134269680-1c63ada4-6bc6-4d46-9e3b-e7c33ebe48e9.png)
 
 在 `configuration.yaml` 中加入以下設定：

@@ -8,7 +8,7 @@ categories: ['js','node']
 ---
 
 最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案
-
+<!--more-->
 ![](https://i.imgur.com/Ipudffg.png)
 
 後來努力去看了一下文件，發現是這樣的

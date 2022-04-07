@@ -8,6 +8,7 @@ categories: ['js','web']
 ---
 
 在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 `prefers-color-scheme: dark` 來檢測是否適用於該條規則，我們可以在 js 使用 `matchMedia` 來查看檢測後的結果。
+<!--more-->
 
 * * *
 

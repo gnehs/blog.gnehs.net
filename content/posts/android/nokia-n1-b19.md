@@ -7,7 +7,9 @@ draft: false
 categories: ['android']
 ---
 
-我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 `adb sideload` 了 思路是這樣的
+我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 `adb sideload` 了 
+<!--more-->
+思路是這樣的
 
 1.  於 boot 分區刷入官方 Recovery
 2.  使用 `adb sideload` 刷入官方更新檔

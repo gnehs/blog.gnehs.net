@@ -8,7 +8,7 @@ categories: ['unboxing']
 ---
 
 因為原本的金屬外殼真的夭壽滑(而且冬天冰的要命)，而且摔了幾次，又剛好官方有活動領了一堆免運卷，於是便順勢買個保護套來套著🤔，話不多說了，底下是圖片
- 
+<!--more-->
 ![](https://i.imgur.com/slf4Wcb.jpg) 
 可愛的包裝 
 ![](https://i.imgur.com/LS6piGf.jpg) 

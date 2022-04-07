@@ -8,7 +8,7 @@ categories: ['js','web']
 ---
 
 最近在製作 [How 發聲器](https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0) 因為影片每個發音播放時都會有間隙，超討厭，但 [How哥產生器](https://howger.orange.tw/?mode=share&id=5edbb61209015) 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。
-
+<!--more-->
 我先說，這真的有夠搞剛，超級無敵麻煩，另外，如果你用 Node.js 用 fluent-ffmpeg 就好了。
 
 在尋找的時候看到這個 [How do i append two video files data to a source buffer using media source api?](https://stackoverflow.com/a/18026530) ，而且下面的 [解法](http://plnkr.co/edit/KBbopiad1wR25nqtrvxw?p=preview&preview) 還會動，甚至支援不同尺寸影片混合，所以我把它偷過來就好了嗎。

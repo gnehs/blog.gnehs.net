@@ -8,7 +8,7 @@ categories: ['js','web','node']
 ---
 
 reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。
-
+<!--more-->
 最近在幫 [Telegram 蒐集君](https://tg.gnehs.net) 寫提交工具，因為驗證碼很麻煩，自己也懶得打所以直接拿 reCAPTCHA 來用了，由於使用 XHR 提交資料，因此 reCAPTCHA 的部分需要稍稍改寫才能夠正常運作。
 
 始步：在 reCAPTCHA 註冊新的網站

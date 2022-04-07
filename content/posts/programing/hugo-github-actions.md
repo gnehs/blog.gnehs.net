@@ -6,7 +6,8 @@ date: 2021-03-31T11:17:50+08:00
 draft: false
 categories: ['hugo']
 ---
-![](/img/tg_image_519956313.jpeg)
+在 commit 後讓 GitHub 幫你直接部署網站！
+<!--more-->
 # 在 GitHub 建立 Repo
 註冊並登入 GitHub 後，點右上角的 New Repository，並填寫 Repo 名稱等資訊便可建立 Repo。
 # 上傳部落格原始碼

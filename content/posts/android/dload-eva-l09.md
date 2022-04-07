@@ -7,7 +7,11 @@ draft: false
 categories: ['android']
 ---
 
-標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用 **若因本教學造成手機損毀恕不負責** ![](https://i.imgur.com/A0wsDB4.png) 首先，先把檔案下載下來
+標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用
+<!--more--> 
+**若因本教學造成手機損毀恕不負責**
+![](https://i.imgur.com/A0wsDB4.png)
+首先，先把檔案下載下來
 
 > 載點:[dload-huawei-p9-eval09-eva-b136.zip](https://mega.nz/#!kFhnEA6S!OjP6yXFtliK4XDRHLNIAKgxpf0gmhEeksDr_fjja0oY) 原址:[Stock ROM dload file - P9 EVA-L09 B136](https://forum.xda-developers.com/p9/development/stock-rom-dload-file-p9-eva-l09-b136-t3382818)
 
