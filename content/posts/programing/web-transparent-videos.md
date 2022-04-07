@@ -17,7 +17,7 @@ Firefox 我沒特別查，反正會動
 Safari 目前（Safari 15.4）僅支援格式為 HEVC 帶有 Alpha 圖層的 .mov 影片檔案，VP9 格式雖然支援，但是顯示不出透明效果，你可以在蘋果的網站上找到相關說明。
 - [HEVC Video with Alpha - WWDC19](https://developer.apple.com/videos/play/wwdc2019/506/)
 # 影片製造
-在這裡我先用 AE 輸出含有 Alpha 圖層的 quickTime 格式檔案
+在這裡我先用 AE 輸出含有 Alpha 圖層的 QuickTime 格式檔案
 ![](/img/2022-04-07_17.14.02.png)
 ## 輸出 Safari 格式（HEVC）
 Safari 的部分超級麻煩，反正蘋果就是專門來坑開發者的，不過 ffmpeg 目前似乎還不支援輸出透明的 HEVC，這邊用了 Compressor 示範。
