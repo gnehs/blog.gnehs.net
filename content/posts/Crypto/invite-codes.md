@@ -8,6 +8,7 @@ categories: ['Crypto']
 ---
 
 因為勝勝有好多邀請碼，所以就整理在這邊了，如果你用了這邊的邀請碼勝勝會很開心喔！
+<!--more-->
 # 加密貨幣
 ### 幣安 Binance
 - 網址： https://accounts.binance.com/zh-TW/register?ref=D8J86YLC
