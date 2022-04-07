@@ -16,6 +16,10 @@ jobs:
         with:
           hugo-version: '0.81.0'
           extended: true
+      - name: Install
+        run: go install github.com/Ladicle/tcardgen
+      - name: Generate Open Graph Images
+        run: tcardgen -f ./tcardgen/font -o ./static/img -t ./tcardgen/template.yaml ./content/posts/**/*.md
       - name: Build
         run: hugo --gc --minify --cleanDestinationDir
       - name: Deploy
