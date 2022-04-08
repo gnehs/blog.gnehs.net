@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['actions','hugo']
 date: 2021-03-31T11:17:50+08:00
 draft: false
-categories: ['hugo']
+categories: ['Hugo']
 ---
 在 commit 後讓 GitHub 幫你直接部署網站！
 <!--more-->

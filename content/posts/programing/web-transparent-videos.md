@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['Firefox','Chrome'] 
 date: 2022-04-07T14:32:39+08:00
 draft: false
-categories: ['js','web']
+categories: ['JS','Web']
 ---
 你有看過透明影片嗎，有想過在網頁上放超酷的透明影片製造與眾不同的視覺效果嗎，這篇教學會一步一步教你如何將透明影片放在網頁上，並講述現有瀏覽器的限制。
 <!--more-->

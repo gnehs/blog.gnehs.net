@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['WordPress']
 date: 2021-03-14T21:31:50+08:00
 draft: false
-categories: ['hugo']
+categories: ['Hugo']
 ---
 
 Hugo 官方有推薦幾個套件來協助文章的遷移，我先是先用了 [wordpress-to-hugo-exporter](https://github.com/SchumacherFM/wordpress-to-hugo-exporter)，不過安裝後似乎無法成功開啟。

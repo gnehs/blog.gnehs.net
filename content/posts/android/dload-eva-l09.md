@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['dload'] 
 date: 2017-02-28T15:19:14+08:00
 draft: false 
-categories: ['android']
+categories: ['Android']
 ---
 
 標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用

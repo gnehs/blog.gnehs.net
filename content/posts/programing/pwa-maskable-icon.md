@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['PWA'] 
 date: 2019-12-22T10:28:35+08:00
 draft: false
-categories: ['js']
+categories: ['JS']
 ---
 
 Chrome 最近釋出 79 版，終於支援了遮罩圖示（看看 Android 8 都出多久了），這篇教學會教你如何使用遮罩圖示。

@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['小米'] 
 date: 2018-02-02T06:04:11+00:00
 draft: false
-categories: ['unboxing']
+categories: ['Unboxing']
 ---
 
 因為原本的金屬外殼真的夭壽滑(而且冬天冰的要命)，而且摔了幾次，又剛好官方有活動領了一堆免運卷，於是便順勢買個保護套來套著🤔，話不多說了，底下是圖片

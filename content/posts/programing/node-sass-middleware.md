@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['sass'] 
 date: 2018-12-02T08:46:59+00:00
 draft: false
-categories: ['js','node']
+categories: ['JS','Node']
 ---
 
 最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案

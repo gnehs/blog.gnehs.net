@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['reCAPTCHA'] 
 date: 2019-05-05T04:08:28+00:00
 draft: false
-categories: ['js','web','node']
+categories: ['JS','Web','Node']
 ---
 
 reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。

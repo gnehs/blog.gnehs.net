@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['YouTube'] 
 date: 2019-01-29T15:21:05+08:00
 draft: false
-categories: ['web']
+categories: ['Web']
 ---
 
 因為時不時可以在一些 MV 裡看見一些很庫蹦來蹦去的字幕，於是便上網搜尋，了解後發現 YouTube 用了 webVTT 當作字幕好朋友來用，可以隨意更改位置和大小，看起來應該是類似 SRT 那樣。

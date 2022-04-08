@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['Hugo']
 date: 2021-03-20T15:30:50+08:00
 draft: false
-categories: ['hugo']
+categories: ['Hugo']
 --- 
 其實我之前就打算把部落格從 WordPress 搬走了，只是之前都懶得弄，Hugo 除了很快之外，也能直接用 Markdown 來寫文章，除此之外不需要資料庫用起來真的很香。
 <!--more-->

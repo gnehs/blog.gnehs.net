@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['Nokia N1'] 
 date: 2018-04-15T08:46:59+00:00
 draft: false
-categories: ['android']
+categories: ['Android']
 ---
 
 我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 `adb sideload` 了 

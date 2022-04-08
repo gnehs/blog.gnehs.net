@@ -4,7 +4,7 @@ author: '勝勝'
 tags: ['js'] 
 date: 2020-06-06T15:18:14+08:00
 draft: false
-categories: ['js','web']
+categories: ['JS','Web']
 ---
 
 最近在製作 [How 發聲器](https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0) 因為影片每個發音播放時都會有間隙，超討厭，但 [How哥產生器](https://howger.orange.tw/?mode=share&id=5edbb61209015) 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。
