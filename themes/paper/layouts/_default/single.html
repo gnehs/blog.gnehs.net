@@ -9,6 +9,17 @@
       {{- .Date.Format "2006 年 01 月 02 日" -}}
     </div>
   </header>
+  <div class="overtime-alert" style="display: none;">
+    ⚠️ 本篇文章距離撰寫時間已超過兩年，部分資訊可能已過時。
+  </div>
+  <script>
+    let modifiedTime = new Date(document.querySelector('meta[property="article:modified_time"]').getAttribute('content'));
+    // check if over 2 years
+    if (new Date().getTime() - modifiedTime.getTime() > 1000 * 60 * 60 * 24 * 365 * 2) {
+      // show alert
+      document.querySelector('.overtime-alert').style.display = 'block';
+    }
+  </script>
   <div class="post-content">{{ .Content }}</div>
   {{- if .Params.tags }}
   <footer class="post-footer">
