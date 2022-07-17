@@ -44,5 +44,5 @@ categories: ['Crypto']
 - 邀請碼：`REF-GNE229`
 - 利益揭露：勝勝獲得 200 蝦幣，你可以拿到首筆訂單 200% 蝦幣回饋
 ### ShopBack
-- 網址：https://app.shopback.com/7YZRdcE5Irb
+- 網址： https://app.shopback.com/7YZRdcE5Irb
 - 利益揭露：達成指定條件後，勝勝可以獲得 100 回饋金
