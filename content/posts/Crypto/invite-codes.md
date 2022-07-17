@@ -1,7 +1,7 @@
 ---
 title: '勝勝的邀請碼們'
 author: '勝勝'
-tags: ['Binance','Pionex','Crypto'] 
+tags: ['Binance','Pionex','Crypto']
 date: 2022-04-08T00:37:59+08:00
 draft: false
 categories: ['Crypto']
@@ -33,7 +33,7 @@ categories: ['Crypto']
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
 ### 國泰優惠
 - 網址： https://myrewards-app.com.tw/MTWeb/html/MT/LandingPage/cathay-mmo/html/invite-code.html#CHAXCX34
-- 邀請碼：`CHAXCX34` 
+- 邀請碼：`CHAXCX34`
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
 ### 台新 Richart
 - 網址： https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=9NY2X
@@ -43,3 +43,6 @@ categories: ['Crypto']
 - 網址： https://shp.ee/5ngxnej
 - 邀請碼：`REF-GNE229`
 - 利益揭露：勝勝獲得 200 蝦幣，你可以拿到首筆訂單 200% 蝦幣回饋
+### ShopBack
+- 網址：https://app.shopback.com/7YZRdcE5Irb
+- 利益揭露：達成指定條件後，勝勝可以獲得 100 回饋金
