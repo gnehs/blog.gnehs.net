@@ -38,6 +38,12 @@ categories: ['Crypto']
 ### 台新 Richart
 - 網址： https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=9NY2X
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
+# 信用卡
+### 玉山 Pi 拍錢包信用卡
+- 網址： https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457
+- 期限：2022/3/1~2023/2/28
+- 利益揭露：被推薦人於核卡後45天內，累積一般消費滿1萬元 (含) 以上，推薦人可獲得 500 P幣。
+- 註：參與本活動不再享有其他指定連結辦卡優惠，其他注意事項請詳見 [揪友一起 UP](https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/pi-card) 活動。
 # 網購
 ### 蝦皮購物
 - 網址： https://shp.ee/5ngxnej
