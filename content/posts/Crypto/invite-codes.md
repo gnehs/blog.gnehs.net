@@ -14,6 +14,10 @@ categories: ['Crypto']
 - 網址： https://accounts.binance.com/zh-TW/register?ref=D8J86YLC
 - 邀請碼：`D8J86YLC`
 - 利益揭露：勝勝獲得 15% 手續費收入，你可以拿到 5%
+### TraderWagon
+- 網址： https://www.traderwagon.com/en/register?ref=zoh4ccx
+- 邀請碼：`zoh4ccx`
+- 利益揭露：勝勝獲得 5% 手續費收入，你前一個月可以拿到 5% 手續費回饋
 ### 派網 Pionex
 - 網址： https://www.pionex.com/zh-TW/sign/ref/eXsvjMiC
 - 邀請碼：`eXsvjMiC`
@@ -22,10 +26,10 @@ categories: ['Crypto']
 - 網址： https://www.bitopro.com/users/sign_up?referrer=0043570754
 - 邀請碼：`0043570754`
 - 利益揭露：勝勝獲得 20% 手續費收入，你得到前 60 天交易手續費 20% off 優惠。
-### FTX
-- 網址： https://ftx.com/referrals#a=gnehsCute
-- 邀請碼：`gnehsCute`
-- 利益揭露：勝勝獲得 25% 手續費收入，你可以拿到 5%
+### ~~FTX~~ （倒了）
+- ~~網址： https://ftx.com/referrals#a=gnehsCute~~
+- ~~邀請碼：`gnehsCute`~~
+- ~~利益揭露：勝勝獲得 25% 手續費收入，你可以拿到 5%~~
 # 銀行
 銀行的部分他規則一直在改，你如果想註冊的話記得先跟勝勝說一下。
 ### 將來銀行
