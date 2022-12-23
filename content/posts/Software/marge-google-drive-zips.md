@@ -20,5 +20,5 @@ for archive in *.zip; do ditto -V -x -k --sequesterRsrc --rsrc "$archive" combin
 這樣就會把目前資料夾內的 zip 檔案通通解壓縮，並丟到 `combined` 資料夾內，也順帶解決參考資料第一個中會出現 UTF-8 編碼錯誤的問題
 
 > 參考資料
-> https://stackoverflow.com/questions/68201952/merge-combine-multiple-downloaded-zip-files-from-google-drive-on-mac
-> https://github.com/CocoaPods/CocoaPods/issues/7711
+> - https://stackoverflow.com/questions/68201952/merge-combine-multiple-downloaded-zip-files-from-google-drive-on-mac
+> - https://github.com/CocoaPods/CocoaPods/issues/7711
