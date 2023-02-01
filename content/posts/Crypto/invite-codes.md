@@ -27,7 +27,7 @@ categories: ['Crypto']
 - 邀請碼：`0043570754`
 - 利益揭露：勝勝獲得 20% 手續費收入，你得到前 60 天交易手續費 20% off 優惠。
 ### ~~FTX~~ （倒了）
-- ~~網址： https://ftx.com/referrals#a=gnehsCute~~
+- 網址： https://ftx.com/referrals#a=gnehsCute
 - ~~邀請碼：`gnehsCute`~~
 - ~~利益揭露：勝勝獲得 25% 手續費收入，你可以拿到 5%~~
 # 銀行
@@ -43,6 +43,9 @@ categories: ['Crypto']
 - 網址： https://myrewards-app.com.tw/MTWeb/html/MT/LandingPage/cathay-mmo/html/invite-code.html#CHAXCX34
 - 邀請碼：`CHAXCX34`
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
+### 國泰世華網銀 APP（Cube）
+- 邀請碼：`BG7T9`
+- 利益揭露：他常常在改，我也不知道我會拿到什麼
 ### 台新 Richart
 - 網址： https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=9NY2X
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
@@ -52,6 +55,11 @@ categories: ['Crypto']
 - 期限：2022/3/1~2023/2/28
 - 利益揭露：被推薦人於核卡後 45 天內，累積一般消費滿 1 萬元 （含） 以上，推薦人可獲得 500 P 幣。
 - 註：參與本活動不再享有其他指定連結辦卡優惠，其他注意事項請詳見 [邀請新戶辦卡送 500 P 幣](https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/pi-card) 活動。
+### 國泰 Cube 卡
+- 網址： https://cathaybk.tw/22J1L41UR
+- 期限： 2023/1/1~2023/6/30
+- 利益揭露：成功推薦新戶同享 200 點、舊戶同享 50 點
+- 活動詳情： https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/cube#blockname05
 # 網購
 ### 蝦皮購物
 - 網址： https://shp.ee/5ngxnej
