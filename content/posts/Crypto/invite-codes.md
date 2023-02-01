@@ -36,9 +36,9 @@ categories: ['Crypto']
 - 網址： https://mgm.nextbank.com.tw/nxb/7N3S8
 - 邀請碼：`7N3S8`
 - 利益揭露：開戶完成後你拿到 200 元，勝勝拿到 100 元。
-### 國泰 Koko
-- 邀請碼：`gnehsowo`
-- 利益揭露：他常常在改，我也不知道我會拿到什麼
+### ~~國泰 Koko~~ （收掉了）
+- ~~邀請碼：`gnehsowo`~~
+- ~~利益揭露：他常常在改，我也不知道我會拿到什麼~~
 ### 國泰優惠
 - 網址： https://myrewards-app.com.tw/MTWeb/html/MT/LandingPage/cathay-mmo/html/invite-code.html#CHAXCX34
 - 邀請碼：`CHAXCX34`
