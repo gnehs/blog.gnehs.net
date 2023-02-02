@@ -3,7 +3,6 @@ title: 勝勝
 paginate: 7
 theme: paper
 languageCode: zh-TW
-DisqusShortname: gnehs-blog
 
 enableRobotsTXT: true
 buildDrafts: false
