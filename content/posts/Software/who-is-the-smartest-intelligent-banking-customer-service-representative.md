@@ -2,7 +2,7 @@
 title: '誰是最聰明的銀行智慧客服'
 author: '勝勝'
 tags: ['銀行','智慧客服']
-date: 2022-04-09T00:00:00+08:00
+date: 2023-02-02T15:46:00+08:00
 draft: false
 categories: ['Software']
 ---
