@@ -9,9 +9,7 @@ categories: ['Software']
 
 ![](/img/SCR-20230202-k6t.png)
 
-是這樣的，勝勝原本在偷臭銀行的智慧客服，還寫了 [Userscript](https://github.com/gnehs/userscripts/raw/main/intelligent-replacer.user.js) 把「智能」換成「智障」，不過還有點 bug 之後再慢慢修。
-
-勝勝在玩客服的時候越玩越起勁，所以就乾脆來比比看到底誰是最聰明的銀行智慧客服？
+是這樣的，勝勝原本在偷臭銀行的智慧客服，還寫了 [Userscript](https://github.com/gnehs/userscripts/raw/main/intelligent-replacer.user.js) 把「智能」換成「智障」，勝勝在玩客服的時候越玩越起勁，所以就乾脆來比比看到底誰是最聰明的銀行智慧客服？
 
 ## 參賽銀行
 ![](/img/SCR-20230202-k3p.png)
