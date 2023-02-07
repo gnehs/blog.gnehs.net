@@ -49,6 +49,10 @@ categories: ['Crypto']
 ### 台新 Richart
 - 網址： https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=9NY2X
 - 利益揭露：他常常在改，我也不知道我會拿到什麼
+### 玉山 e.Fingo
+- 期限：~2023/3/31
+- 邀請碼：`6HTA53WJ`
+- 利益揭露：你跟勝勝各獲得 10 點
 # 信用卡
 ### 玉山 Pi 拍錢包信用卡
 - 網址： [https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457](https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457)
