@@ -2,7 +2,7 @@
 title: '破解 NCC「型式認證資料查詢」頁面的驗證碼'
 author: '勝勝'
 tags: ['NCC', 'Captcha']
-date: 2023-02-08T13:00:00+08:00
+date: 2023-02-08T12:35:00+08:00
 draft: false
 categories: ['JS']
 ---
