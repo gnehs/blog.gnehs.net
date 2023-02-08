@@ -9,14 +9,10 @@ categories: ['JS']
 是這樣的，勝勝想寫一個程式定期去 NCC 那邊看 Apple 最近出的大 HomePod 過審了沒，但是那個網頁有個驗證碼，勝勝就在想要怎麼解決他，後來勝勝找到了方法，下面就來分享給大家。
 <!--more-->
 ![](/img/SCR-20230208-h9k.png)
-<div style="text-align: center;">NCC 網站的驗證碼</div>
-
 你可以看到 NCC 的網站有個驗證碼，勝勝發現了一個超級簡單的方法來處理他，那就是把他拉進去 Photoshop 裡面調一下臨界值
 
 
 ![](/img/SCR-20230208-hc3.png)
-<div style="text-align: center;">稍微在 Photoshop 裡面調一下臨界值</div>
-
 🪄 你看驗證碼的數字就如魔法般輕輕鬆鬆就被我們弄出來了，接下來過個 OCR 就可以解出驗證碼了，實際的程式碼如下
 
 ```js
