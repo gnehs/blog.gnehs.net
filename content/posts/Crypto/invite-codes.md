@@ -53,6 +53,11 @@ categories: ['Crypto']
 - 期限：~2023/3/31
 - 邀請碼：`6HTA53WJ`
 - 利益揭露：你跟勝勝各獲得 10 點
+### 遠銀 Bankee
+- 期限：~2023/3/31
+- 網址： https://www.appbankee.com.tw/bankee/rest/re/MEL61
+- 邀請碼：`MEL61`
+- 利益揭露：你跟勝勝都可以獲得 2.6% 的活存利率
 # 信用卡
 ### 玉山 Pi 拍錢包信用卡
 - 網址： [https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457](https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457)
