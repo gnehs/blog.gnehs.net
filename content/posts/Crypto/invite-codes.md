@@ -69,6 +69,10 @@ categories: ['Crypto']
 - 期限： 2023/1/1~2023/6/30
 - 利益揭露：成功推薦新戶同享 200 點、舊戶同享 50 點
 - 活動詳情： https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/cube#blockname05
+### 聯邦吉鶴卡
+- 網址： https://card.ubot.com.tw/eCard/QRCard/ApplyUrl.aspx?KEY=59_A_2008060014_JHA__4768088569
+- 期限： 2023/1/1~2023/6/30
+- 利益揭露：勝勝可以拿到三百塊刷卡金
 # 網購
 ### 蝦皮購物
 - 網址： https://shp.ee/5ngxnej
