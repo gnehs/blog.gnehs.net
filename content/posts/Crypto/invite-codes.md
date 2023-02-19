@@ -26,19 +26,12 @@ categories: ['Crypto']
 - 網址： https://www.bitopro.com/users/sign_up?referrer=0043570754
 - 邀請碼：`0043570754`
 - 利益揭露：勝勝獲得 20% 手續費收入，你得到前 60 天交易手續費 20% off 優惠。
-### ~~FTX~~ （倒了）
-- 網址： https://ftx.com/referrals#a=gnehsCute
-- ~~邀請碼：`gnehsCute`~~
-- ~~利益揭露：勝勝獲得 25% 手續費收入，你可以拿到 5%~~
 # 銀行
 銀行的部分他規則一直在改，你如果想註冊的話記得先跟勝勝說一下。
 ### 將來銀行
 - 網址： https://mgm.nextbank.com.tw/nxb/7N3S8
 - 邀請碼：`7N3S8`
 - 利益揭露：開戶完成後你拿到 200 元，勝勝拿到 100 元。
-### ~~國泰 Koko~~ （收掉了）
-- ~~邀請碼：`gnehsowo`~~
-- ~~利益揭露：他常常在改，我也不知道我會拿到什麼~~
 ### 國泰優惠
 - 網址： https://myrewards-app.com.tw/MTWeb/html/MT/LandingPage/cathay-mmo/html/invite-code.html#CHAXCX34
 - 邀請碼：`CHAXCX34`
@@ -58,6 +51,7 @@ categories: ['Crypto']
 - 網址： https://www.appbankee.com.tw/bankee/rest/re/MEL61
 - 邀請碼：`MEL61`
 - 利益揭露：你跟勝勝都可以獲得 2.6% 的活存利率
+- 備註：他們家 APP 很醜，醜到爆 ._.
 # 信用卡
 ### 玉山 Pi 拍錢包信用卡
 - 網址： [https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457](https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457)
@@ -81,3 +75,13 @@ categories: ['Crypto']
 ### ShopBack
 - 網址： https://app.shopback.com/7YZRdcE5Irb
 - 利益揭露：達成指定條件後，勝勝可以獲得 100 回饋金
+
+# 無法使用
+因各種原因，以下的邀請碼無法使用。
+### ~~國泰 Koko~~ （收掉了）
+- ~~邀請碼：`gnehsowo`~~
+- ~~利益揭露：他常常在改，我也不知道我會拿到什麼~~
+### ~~FTX~~ （倒了）
+- 網址： https://ftx.com/referrals#a=gnehsCute
+- ~~邀請碼：`gnehsCute`~~
+- ~~利益揭露：勝勝獲得 25% 手續費收入，你可以拿到 5%~~
