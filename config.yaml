@@ -30,3 +30,7 @@ menu:
       name: 分類
       url: /categories/
       weight: 10
+    - identifier: invite
+      name: 邀請碼
+      url: /invite-codes/
+      weight: 10
