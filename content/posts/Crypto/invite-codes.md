@@ -75,7 +75,14 @@ categories: ['Crypto']
 ### ShopBack
 - 網址： https://app.shopback.com/7YZRdcE5Irb
 - 利益揭露：達成指定條件後，勝勝可以獲得 100 回饋金
-
+# 旅遊
+### KKday
+- 網址： https://m.kkday.com/zh-tw/i/N4AMNG
+- 利益揭露：你可以拿到 NT$100 的折價券，在達成指定條件後，勝勝可以獲得等值 3 USD 的點數
+### FunNow
+- 網址： https://funnow.page.link/Er4eoicXDQArJCHK7
+- 邀請碼：`VBEFN9H`（註冊後在 `會員` > `輸入優惠碼` 輸入）
+- 利益揭露：你可以拿到 500 點，在達成指定條件後，勝勝可以獲得 100 點（但是我也不知道一點可以換多少）
 # 無法使用
 因各種原因，以下的邀請碼無法使用。
 ### ~~國泰 Koko~~ （收掉了）
