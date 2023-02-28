@@ -54,9 +54,9 @@ categories: ['Crypto']
 - 備註：他們家 APP 很醜，醜到爆 ._.
 # 信用卡
 ### 玉山 Pi 拍錢包信用卡
-- 網址： [https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457](https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641658726498457)
-- 期限：2022/3/1~2023/2/28
-- 利益揭露：被推薦人於核卡後 45 天內，累積一般消費滿 1 萬元 （含） 以上，推薦人可獲得 500 P 幣。
+- 網址： [https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641677036362687](https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0049&param=641677036362687)
+- 期限：2023/3/1~2024/2/29
+- 利益揭露：被推薦人於核卡後 45 天內，新增一般消費不限金額，推薦人可獲得 500 P 幣。
 - 註：參與本活動不再享有其他指定連結辦卡優惠，其他注意事項請詳見 [邀請新戶辦卡送 500 P 幣](https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/pi-card) 活動。
 ### 國泰 Cube 卡
 - 網址： https://cathaybk.tw/22J1L41UR
