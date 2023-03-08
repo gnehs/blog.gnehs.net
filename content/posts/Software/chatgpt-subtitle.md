@@ -26,8 +26,8 @@ categories: ['Software']
 # 下載
 你可以在下面 GitHub 的連結下載到這個程式，其中 Node.js 版本僅為最小可行性產品，做為概念驗證之用，未來新增新功能主要會以 Electron 版本為主，你當然也可以自行修改程式碼來達到你想要的效果。
 
-Electron 版本： https://github.com/gnehs/subtitle-translator-electron
-Node 版本： https://github.com/gnehs/subtitle-translator
+- `Electron` 版本： https://github.com/gnehs/subtitle-translator-electron
+- `Node.js` 版本： https://github.com/gnehs/subtitle-translator
 
 
 
