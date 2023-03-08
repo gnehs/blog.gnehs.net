@@ -390,14 +390,14 @@ img {
 }
 
 .post-content a {
-  text-decoration: 1px solid var(--primary);
+  text-decoration: underline;
 }
 
 .post-content a code {
   margin-left: 0;
   margin-right: 0;
   border-radius: 0;
-  text-decoration: 1px solid var(--primary);
+  text-decoration: underline;
 }
 
 .post-content del {
