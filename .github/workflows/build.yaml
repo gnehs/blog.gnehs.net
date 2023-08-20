@@ -3,29 +3,29 @@ name: Github-Pages
 on:
   push:
     branches:
-      - ❤️
+      - "main"
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v4
         with:
-          go-version: '1.17.8' 
+          go-version: "1.17.8"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.81.0'
+          hugo-version: "0.81.0"
           extended: true
       - name: Install
         run: go install github.com/gnehs/tcardgen@0.0.1
       - name: Generate Open Graph Images
         run: tcardgen -f ./tcardgen/font -o ./static/img -c ./tcardgen/template/template.yaml -t ./tcardgen/template/template.png ./content/posts/**/*.md
       - name: Build
-        run: hugo --gc --minify --cleanDestinationDir 
+        run: hugo --gc --minify --cleanDestinationDir
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
