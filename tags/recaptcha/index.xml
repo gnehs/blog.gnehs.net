@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reCAPTCHA on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/recaptcha/</link>
+    <description>Recent content in reCAPTCHA on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 05 May 2019 04:08:28 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/recaptcha/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>&lt;p&gt;reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

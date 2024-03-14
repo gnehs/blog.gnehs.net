@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/wordpress/</link>
+    <description>Recent content in WordPress on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 14 Mar 2021 21:31:50 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>將 WordPress 文章匯入到 Hugo</title>
+      <link>https://blog.gnehs.net/wordpress-posts-to-hugo/</link>
+      <pubDate>Sun, 14 Mar 2021 21:31:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/wordpress-posts-to-hugo/</guid>
+      <description>Hugo 官方有推薦幾個套件來協助文章的遷移，我先是先用了 wordpress-to-hugo-exporter，不過安裝後似乎無法成功開啟。
+之後我用了 blog2md 便能順利匯入文章了。
+事前準備  將文章從 WordPress 匯出 下載 blog2md 安裝 Node.js  開始轉換  cd ./blog2md-master/ 安裝 node 套件（註：需要 node.js） npm i 轉換檔案 node index.js w your-wordpress-backup-export.xml out  之後將 out 資料夾中的內容複製到 /content/posts 就完工了！</description>
+    </item>
+    
+  </channel>
+</rss>

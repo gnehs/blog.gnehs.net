@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screen on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/screen/</link>
+    <description>Recent content in Screen on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 20 Aug 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/screen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ThinkVision P27u-20 開箱</title>
+      <link>https://blog.gnehs.net/p27u-20/</link>
+      <pubDate>Sun, 20 Aug 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/p27u-20/</guid>
+      <description>嗨，這裡是勝勝。最近我買了一款非常值得推薦的螢幕，但我發現網上的開箱文實在少之又少，因此我決定自己撰寫一篇分享給大家。 最近我一直在尋找適合的 4K 螢幕，我逛遍了從 PChome 到亞馬遜的各大線上平台。最後在臉書的廣告中我找到了這款 ThinkVision P27u-20。不過，因為他們沒有付我廣告費，我就不放連結了，要買的自己找。
+超級便宜 這款螢幕多方面都很出色，其中最讓我驚訝的是價格便宜，只要 $14,280。而其內建的 Thunderbolt Dock 在其他地方售價約萬元，換句話說，你實際上只用出差不多四千塊就能得到一個 4K 螢幕，而且色域覆蓋相當高，非常的物超所值！
+色域  99.1% DCI-P3 99.5% Adobe RGB 100% sRGB 100% BT.709 83.7% BT.2020  Thunderbolt 4 另一個讓我眼睛一亮的是對 Thunderbolt 4 的支援。目前市場上支援 Thunderbolt 的螢幕還很少，價格也相對較高。比如說，BenQ 的 PD2725U 就要三萬元附近。
+用一條線連接全部的設備 這款螢幕另一個賣點在於用一條線就能連接所有設備。除了能提供 100W 的充電外，還有五個 USB 接孔、網路線、DP 跟兩個 HDMI 。更重要的是，這台螢幕有兩個 Thunderbolt 4，一邊可以連接電腦，在另一邊你還可以繼續接一個螢幕。如果需要帶著電腦外出，只需拔掉一根線就可以了，非常優雅 &amp;gt;&amp;lt;
+缺點 當然，這款螢幕也並非完美無缺，仍有一些小瑕疵。例如，有美國和韓國的使用者反映在螢幕運作時會有微弱的電流聲。我自己的確也有發現這個問題，但如果你日常都沒有注意到烹煮時電磁爐的嗡嗡聲，那你可能也不會注意到這個電流聲。此外，電流聲只在非常接近螢幕時你才能聽到這個聲音。
+此外，這款螢幕的內建喇叭音質並不理想，但考慮到螢幕的主要目的並非播放音樂，這一點也頗合理。而且，這款螢幕的下巴，相比我之前使用的 Dell U2720Q 的四面窄邊框來說厚了很多，視覺效果略遜一籌。
+另外，網站上的規格表明，其 HDR 峰值亮度只有 450nit，相對於一些 HDR1000 的設備來說並不出眾。
+但即便如此，我還是極力推薦這款螢幕，因為其優點遠大於缺點，並且價格實惠，性價比高。
+後記 我後來發現螢幕的 Thunderbolt 4 downstream 不會動，連手機接上去都不會充電，原本以為壞了打算去送修，後來看說明書才知道把螢幕設定中的 Super USB Charging 關掉就好了 .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zip on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/zip/</link>
+    <description>Recent content in Zip on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 24 Dec 2022 01:32:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/zip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>讓 Google Drive 下載的解壓檔解壓縮到相同資料夾</title>
+      <link>https://blog.gnehs.net/merge-google-drive-zips/</link>
+      <pubDate>Sat, 24 Dec 2022 01:32:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/merge-google-drive-zips/</guid>
+      <description>勝勝剛從 Google Drive 撈了一個資料夾下來，可是你也知道的，Google 會把它拆成很多小的壓縮檔，於是解壓縮後就會變成這樣
+ abc abc 1 abc 2 &amp;hellip;  勝勝希望可以將解壓縮的檔案都放在一起，經過勝勝的調查，發現了這個指令
+mkdir combined for archive in *.zip; do ditto -V -x -k --sequesterRsrc --rsrc &amp;#34;$archive&amp;#34; combined; done 這樣就會把目前資料夾內的 zip 檔案通通解壓縮，並丟到 combined 資料夾內，也順帶解決參考資料第一個中會出現 UTF-8 編碼錯誤的問題
+ 參考資料
+ https://stackoverflow.com/questions/68201952/merge-combine-multiple-downloaded-zip-files-from-google-drive-on-mac https://github.com/CocoaPods/CocoaPods/issues/7711   </description>
+    </item>
+    
+  </channel>
+</rss>
