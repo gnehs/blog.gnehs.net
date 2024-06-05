@@ -25,10 +25,10 @@ categories: ["Hardware"]
 
 我在 Windows 上用的是 [WinNUT-Client](https://github.com/nutdotnet/WinNUT-Client/releases)
 
-![](/static/SCR-20240606-baiw.png)
+![](/img/SCR-20240606-baiw.png)
 
 UNRAID 上用的是 [Network UPS Tools (NUT) for UNRAID](https://forums.unraid.net/topic/60217-plugin-nut-v2-network-ups-tools/)
 
-![](/static/SCR-20240606-baog.png)
+![](/img/SCR-20240606-baog.png)
 
 另外記得把路由器接上 UPS，這樣才能在斷電時傳送關機訊號給其他裝置！
