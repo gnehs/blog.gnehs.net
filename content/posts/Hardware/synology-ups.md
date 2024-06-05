@@ -1,5 +1,5 @@
 ---
-title: "在其他裝置上透過 Synology NAS 的 UPS 伺服器觸發自動關機"
+title: "在其他裝置上連接 Synology NAS 的 UPS 伺服器"
 author: "勝勝"
 tags: ["UPS"]
 date: 2024-06-05T18:00:00+08:00
