@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/web/</link>
+    <description>Recent content in Web on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Thu, 07 Apr 2022 14:32:39 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在網頁上展示酷炫的透明影片</title>
+      <link>https://blog.gnehs.net/web-transparent-videos/</link>
+      <pubDate>Thu, 07 Apr 2022 14:32:39 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/web-transparent-videos/</guid>
+      <description>&lt;p&gt;你有看過透明影片嗎，有想過在網頁上放超酷的透明影片製造與眾不同的視覺效果嗎，這篇教學會一步一步教你如何將透明影片放在網頁上，並講述現有瀏覽器的限制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何使用 Javascript 將多部影片混合為一個影片</title>
+      <link>https://blog.gnehs.net/js-merge-video/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-merge-video/</guid>
+      <description>&lt;p&gt;最近在製作 &lt;a href=&#34;https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0&#34;&gt;How 發聲器&lt;/a&gt; 因為影片每個發音播放時都會有間隙，超討厭，但 &lt;a href=&#34;https://howger.orange.tw/?mode=share&amp;amp;id=5edbb61209015&#34;&gt;How哥產生器&lt;/a&gt; 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>透過 JS 即時偵測系統外觀是否處於深色模式</title>
+      <link>https://blog.gnehs.net/js-detect-dark-mode/</link>
+      <pubDate>Sat, 14 Dec 2019 12:36:43 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-detect-dark-mode/</guid>
+      <description>&lt;p&gt;在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 &lt;code&gt;prefers-color-scheme: dark&lt;/code&gt; 來檢測是否適用於該條規則，我們可以在 js 使用 &lt;code&gt;matchMedia&lt;/code&gt; 來查看檢測後的結果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>&lt;p&gt;reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>YouTube 字幕特效是如何製作的？</title>
+      <link>https://blog.gnehs.net/youtube-webvtt/</link>
+      <pubDate>Tue, 29 Jan 2019 15:21:05 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/youtube-webvtt/</guid>
+      <description>&lt;p&gt;因為時不時可以在一些 MV 裡看見一些很庫蹦來蹦去的字幕，於是便上網搜尋，了解後發現 YouTube 用了 webVTT 當作字幕好朋友來用，可以隨意更改位置和大小，看起來應該是類似 SRT 那樣。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

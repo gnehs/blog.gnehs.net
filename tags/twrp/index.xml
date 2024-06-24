@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TWRP on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/twrp/</link>
+    <description>Recent content in TWRP on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 28 Feb 2017 03:07:59 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/twrp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解決刷機產生的Data分區加密問題</title>
+      <link>https://blog.gnehs.net/fix-encryption-unsuccessful/</link>
+      <pubDate>Tue, 28 Feb 2017 03:07:59 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/fix-encryption-unsuccessful/</guid>
+      <description>&lt;p&gt;我是不知道其他系統或手機能不能用啦，反正我 P9 是成功了&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

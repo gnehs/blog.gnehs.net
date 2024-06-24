@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/android/</link>
+    <description>Recent content in Android on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 15 Apr 2018 08:46:59 +0000</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nokia N1 B19 救磚</title>
+      <link>https://blog.gnehs.net/nokia-n1-b19/</link>
+      <pubDate>Sun, 15 Apr 2018 08:46:59 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/nokia-n1-b19/</guid>
+      <description>&lt;p&gt;我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 &lt;code&gt;adb sideload&lt;/code&gt; 了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>華為P9救磚(EVA-L09)</title>
+      <link>https://blog.gnehs.net/dload-eva-l09/</link>
+      <pubDate>Tue, 28 Feb 2017 15:19:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/dload-eva-l09/</guid>
+      <description>&lt;p&gt;標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解決刷機產生的Data分區加密問題</title>
+      <link>https://blog.gnehs.net/fix-encryption-unsuccessful/</link>
+      <pubDate>Tue, 28 Feb 2017 03:07:59 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/fix-encryption-unsuccessful/</guid>
+      <description>&lt;p&gt;我是不知道其他系統或手機能不能用啦，反正我 P9 是成功了&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

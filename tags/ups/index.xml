@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UPS on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/ups/</link>
+    <description>Recent content in UPS on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 05 Jun 2024 18:00:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/ups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在其他裝置上連接 Synology NAS 的 UPS 伺服器</title>
+      <link>https://blog.gnehs.net/synology-ups/</link>
+      <pubDate>Wed, 05 Jun 2024 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/synology-ups/</guid>
+      <description>事情是這樣的，勝勝家最近停電，但是我忘記搞定 UPS 伺服器，所以只有透過 USB 與 UPS 連線的 Synology NAS 好好關機，為了防止硬碟變得破破爛爛，要幫其他裝置也都設定好自動關機。
+Synology 有個設定可以當作 UPS 伺服器，可以把關機訊號傳遞給在網路上的其他裝置，但是在設定 UPS 時，無論是在 Windows 上或是 UNRAID 都無法連上 UPS 伺服器，可是我明明就有把 IP 都填進去白名單。
+後來在這篇文章上發現原來 Synology 是使用寫死的 UPS 名稱、帳號和密碼，照著輸入就能成功連線了！
+ Notes on Synology
+Synology&amp;rsquo;s NUT implementation uses hardcoded values for several items:
+ UPS Name: ups Username: monuser Password: secret   順便提一下 UPS 用的軟體好了！
+我在 Windows 上用的是 WinNUT-Client
+UNRAID 上用的是 Network UPS Tools (NUT) for UNRAID 還附了一個可以放在 footer 的小工具</description>
+    </item>
+    
+  </channel>
+</rss>

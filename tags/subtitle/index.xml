@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subtitle on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/subtitle/</link>
+    <description>Recent content in Subtitle on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 08 Mar 2023 10:13:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/subtitle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT 能夠勝任字幕翻譯的任務嗎？</title>
+      <link>https://blog.gnehs.net/chatgpt-subtitle/</link>
+      <pubDate>Wed, 08 Mar 2023 10:13:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/chatgpt-subtitle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.gnehs.net/img/223497376-71fc2b16-d77e-4993-9acb-9a59c64ed31a.png&#34; alt=&#34;&#34;&gt;
+在 ChatGPT 應用百花齊放的如今，勝勝想要知道 ChatGPT 是否能夠勝任字幕翻譯的任務，於是便開始寫了一個程式來看看 ChatGPT 的表現如何。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

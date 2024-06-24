@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/js/</link>
+    <description>Recent content in JS on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 08 Feb 2023 12:35:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>破解 NCC「型式認證資料查詢」頁面的驗證碼</title>
+      <link>https://blog.gnehs.net/ncc-captcha/</link>
+      <pubDate>Wed, 08 Feb 2023 12:35:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/ncc-captcha/</guid>
+      <description>&lt;p&gt;勝勝想要寫一個程式定期檢查 NCC 網站上 Apple 最近推出的大 HomePod 是否已經通過審核。但網頁上有一個驗證碼，這讓勝勝不知如何處理。後來，勝勝找到了一個超級簡單的方法，下面就來分享給大家。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>將 Google Fit 體重資料匯入至 Apple Health</title>
+      <link>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</link>
+      <pubDate>Tue, 23 Aug 2022 23:42:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</guid>
+      <description>因為勝勝希望可以把 Google Fit 的體重資料匯入到蘋果的「健康」 App 裡面，不過剛開始找只有看到付費 APP 提供轉換，在勝勝努力之下，終於找到了方法，分享給大家，如果你也有相同的需求，照著這篇教學就可以了。 &amp;gt;&amp;lt;
+匯出 Google Fit 資料 首先你要先去 Google Takeout 把你的 Google Fit 資料通通匯出，記得勾 Google Fit 就好，不要選太多不然匯出會很慢很慢。
+整理資料 找到你的體重檔案 你應該會在匯出的檔案中找到 derived_com.google.weight_com.google.android.g.json，打開後大概長這樣。
+{ &amp;#34;Data Source&amp;#34;: &amp;#34;derived:com.google.weight:com.google.android.gms:merge_weight&amp;#34;, &amp;#34;Data Points&amp;#34;: [ { &amp;#34;fitValue&amp;#34;: [ { &amp;#34;value&amp;#34;: { &amp;#34;fpVal&amp;#34;: 55 } } ], &amp;#34;originDataSourceId&amp;#34;: &amp;#34;raw:com.google.weight:com.google.android.apps.fitness:user_input&amp;#34;, &amp;#34;endTimeNanos&amp;#34;: 1434620350091000000, &amp;#34;dataTypeName&amp;#34;: &amp;#34;com.google.weight&amp;#34;, 只拿需要的資料 我們只需要其中的日期與體重而已，下面我們分成兩個方法進行轉換，後面的雖然可能比較難懂，不過如果你會的話會快很多
+如果你不會 Javascript 你可以透過線上的 JSON to CSV Converter 把你的 JSON 轉換為 Excel 檔，下載成 Excel 檔案後清除多餘的欄位，並將欄位順序調整為日期、體重。
+對了，日期的部分你可以透過 =TEXT(日期欄位/1000000/24/60/60/1000 + 25569,&amp;quot;YYYY-MM-DD HH:MM&amp;quot;) 進行轉換，不然可能捷徑會看不懂這個日期。</description>
+    </item>
+    
+    <item>
+      <title>在網頁上展示酷炫的透明影片</title>
+      <link>https://blog.gnehs.net/web-transparent-videos/</link>
+      <pubDate>Thu, 07 Apr 2022 14:32:39 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/web-transparent-videos/</guid>
+      <description>&lt;p&gt;你有看過透明影片嗎，有想過在網頁上放超酷的透明影片製造與眾不同的視覺效果嗎，這篇教學會一步一步教你如何將透明影片放在網頁上，並講述現有瀏覽器的限制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何使用 Javascript 將多部影片混合為一個影片</title>
+      <link>https://blog.gnehs.net/js-merge-video/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-merge-video/</guid>
+      <description>&lt;p&gt;最近在製作 &lt;a href=&#34;https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0&#34;&gt;How 發聲器&lt;/a&gt; 因為影片每個發音播放時都會有間隙，超討厭，但 &lt;a href=&#34;https://howger.orange.tw/?mode=share&amp;amp;id=5edbb61209015&#34;&gt;How哥產生器&lt;/a&gt; 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 PWA 應用程式中使用遮罩圖示（maskable icon）</title>
+      <link>https://blog.gnehs.net/pwa-maskable-icon/</link>
+      <pubDate>Sun, 22 Dec 2019 10:28:35 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/pwa-maskable-icon/</guid>
+      <description>&lt;p&gt;Chrome 最近釋出 79 版，終於支援了遮罩圖示（看看 Android 8 都出多久了），這篇教學會教你如何使用遮罩圖示。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>透過 JS 即時偵測系統外觀是否處於深色模式</title>
+      <link>https://blog.gnehs.net/js-detect-dark-mode/</link>
+      <pubDate>Sat, 14 Dec 2019 12:36:43 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-detect-dark-mode/</guid>
+      <description>&lt;p&gt;在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 &lt;code&gt;prefers-color-scheme: dark&lt;/code&gt; 來檢測是否適用於該條規則，我們可以在 js 使用 &lt;code&gt;matchMedia&lt;/code&gt; 來查看檢測後的結果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>&lt;p&gt;reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>讓 node-sass-middleware 轉換 SASS</title>
+      <link>https://blog.gnehs.net/node-sass-middleware/</link>
+      <pubDate>Sun, 02 Dec 2018 08:46:59 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/node-sass-middleware/</guid>
+      <description>&lt;p&gt;最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

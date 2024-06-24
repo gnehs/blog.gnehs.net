@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/hardware/</link>
+    <description>Recent content in Hardware on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 05 Jun 2024 18:00:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在其他裝置上連接 Synology NAS 的 UPS 伺服器</title>
+      <link>https://blog.gnehs.net/synology-ups/</link>
+      <pubDate>Wed, 05 Jun 2024 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/synology-ups/</guid>
+      <description>事情是這樣的，勝勝家最近停電，但是我忘記搞定 UPS 伺服器，所以只有透過 USB 與 UPS 連線的 Synology NAS 好好關機，為了防止硬碟變得破破爛爛，要幫其他裝置也都設定好自動關機。
+Synology 有個設定可以當作 UPS 伺服器，可以把關機訊號傳遞給在網路上的其他裝置，但是在設定 UPS 時，無論是在 Windows 上或是 UNRAID 都無法連上 UPS 伺服器，可是我明明就有把 IP 都填進去白名單。
+後來在這篇文章上發現原來 Synology 是使用寫死的 UPS 名稱、帳號和密碼，照著輸入就能成功連線了！
+ Notes on Synology
+Synology&amp;rsquo;s NUT implementation uses hardcoded values for several items:
+ UPS Name: ups Username: monuser Password: secret   順便提一下 UPS 用的軟體好了！
+我在 Windows 上用的是 WinNUT-Client
+UNRAID 上用的是 Network UPS Tools (NUT) for UNRAID 還附了一個可以放在 footer 的小工具</description>
+    </item>
+    
+    <item>
+      <title>ThinkVision P27u-20 開箱</title>
+      <link>https://blog.gnehs.net/p27u-20/</link>
+      <pubDate>Sun, 20 Aug 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/p27u-20/</guid>
+      <description>嗨，這裡是勝勝。最近我買了一款非常值得推薦的螢幕，但我發現網上的開箱文實在少之又少，因此我決定自己撰寫一篇分享給大家。 最近我一直在尋找適合的 4K 螢幕，我逛遍了從 PChome 到亞馬遜的各大線上平台。最後在臉書的廣告中我找到了這款 ThinkVision P27u-20。不過，因為他們沒有付我廣告費，我就不放連結了，要買的自己找。
+超級便宜 這款螢幕多方面都很出色，其中最讓我驚訝的是價格便宜，只要 $14,280。而其內建的 Thunderbolt Dock 在其他地方售價約萬元，換句話說，你實際上只用出差不多四千塊就能得到一個 4K 螢幕，而且色域覆蓋相當高，非常的物超所值！
+色域  99.1% DCI-P3 99.5% Adobe RGB 100% sRGB 100% BT.709 83.7% BT.2020  Thunderbolt 4 另一個讓我眼睛一亮的是對 Thunderbolt 4 的支援。目前市場上支援 Thunderbolt 的螢幕還很少，價格也相對較高。比如說，BenQ 的 PD2725U 就要三萬元附近。
+用一條線連接全部的設備 這款螢幕另一個賣點在於用一條線就能連接所有設備。除了能提供 100W 的充電外，還有五個 USB 接孔、網路線、DP 跟兩個 HDMI 。更重要的是，這台螢幕有兩個 Thunderbolt 4，一邊可以連接電腦，在另一邊你還可以繼續接一個螢幕。如果需要帶著電腦外出，只需拔掉一根線就可以了，非常優雅 &amp;gt;&amp;lt;
+缺點 當然，這款螢幕也並非完美無缺，仍有一些小瑕疵。例如，有美國和韓國的使用者反映在螢幕運作時會有微弱的電流聲。我自己的確也有發現這個問題，但如果你日常都沒有注意到烹煮時電磁爐的嗡嗡聲，那你可能也不會注意到這個電流聲。此外，電流聲只在非常接近螢幕時你才能聽到這個聲音。
+此外，這款螢幕的內建喇叭音質並不理想，但考慮到螢幕的主要目的並非播放音樂，這一點也頗合理。而且，這款螢幕的下巴，相比我之前使用的 Dell U2720Q 的四面窄邊框來說厚了很多，視覺效果略遜一籌。
+另外，網站上的規格表明，其 HDR 峰值亮度只有 450nit，相對於一些 HDR1000 的設備來說並不出眾。
+但即便如此，我還是極力推薦這款螢幕，因為其優點遠大於缺點，並且價格實惠，性價比高。
+後記 我後來發現螢幕的 Thunderbolt 4 downstream 不會動，連手機接上去都不會充電，原本以為壞了打算去送修，後來看說明書才知道把螢幕設定中的 Super USB Charging 關掉就好了 .</description>
+    </item>
+    
+    <item>
+      <title>第一次組電腦，好緊張 &gt;&lt;</title>
+      <link>https://blog.gnehs.net/2023-pc/</link>
+      <pubDate>Wed, 22 Feb 2023 01:10:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/2023-pc/</guid>
+      <description>&lt;p&gt;為了進入夢想中的學校，勝勝花了重金購買了新的電腦，所以想記錄一下在 2023 年 2 月的當下，組裝電腦到底花了多少錢。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小米行動電源 10000 高配版 保護套 開箱</title>
+      <link>https://blog.gnehs.net/mi-power-bank-protective-case/</link>
+      <pubDate>Fri, 02 Feb 2018 06:04:11 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/mi-power-bank-protective-case/</guid>
+      <description>&lt;p&gt;因為原本的金屬外殼真的夭壽滑(而且冬天冰的要命)，而且摔了幾次，又剛好官方有活動領了一堆免運卷，於是便順勢買個保護套來套著🤔，話不多說了，底下是圖片&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
