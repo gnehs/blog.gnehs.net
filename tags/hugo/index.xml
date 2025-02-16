@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/hugo/</link>
+    <description>Recent content in hugo on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 31 Mar 2021 11:17:50 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 GitHub Action 自動部署 Hugo 部落格</title>
+      <link>https://blog.gnehs.net/hugo-github-actions/</link>
+      <pubDate>Wed, 31 Mar 2021 11:17:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/hugo-github-actions/</guid>
+      <description>&lt;p&gt;在 commit 後讓 GitHub 幫你直接部署網站！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>將部落格遷移到 Hugo</title>
+      <link>https://blog.gnehs.net/move-blog-to-hugo/</link>
+      <pubDate>Sat, 20 Mar 2021 15:30:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/move-blog-to-hugo/</guid>
+      <description>&lt;p&gt;其實我之前就打算把部落格從 WordPress 搬走了，只是之前都懶得弄，Hugo 除了很快之外，也能直接用 Markdown 來寫文章，除此之外不需要資料庫用起來真的很香。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

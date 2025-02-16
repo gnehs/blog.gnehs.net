@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/js/</link>
+    <description>Recent content in js on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 06 Jun 2020 15:18:14 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用 Javascript 將多部影片混合為一個影片</title>
+      <link>https://blog.gnehs.net/js-merge-video/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-merge-video/</guid>
+      <description>&lt;p&gt;最近在製作 &lt;a href=&#34;https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0&#34;&gt;How 發聲器&lt;/a&gt; 因為影片每個發音播放時都會有間隙，超討厭，但 &lt;a href=&#34;https://howger.orange.tw/?mode=share&amp;amp;id=5edbb61209015&#34;&gt;How哥產生器&lt;/a&gt; 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>透過 JS 即時偵測系統外觀是否處於深色模式</title>
+      <link>https://blog.gnehs.net/js-detect-dark-mode/</link>
+      <pubDate>Sat, 14 Dec 2019 12:36:43 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-detect-dark-mode/</guid>
+      <description>&lt;p&gt;在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 &lt;code&gt;prefers-color-scheme: dark&lt;/code&gt; 來檢測是否適用於該條規則，我們可以在 js 使用 &lt;code&gt;matchMedia&lt;/code&gt; 來查看檢測後的結果。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

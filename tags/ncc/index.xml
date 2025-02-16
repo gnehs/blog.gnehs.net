@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NCC on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/ncc/</link>
+    <description>Recent content in NCC on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 08 Feb 2023 12:35:00 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/ncc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>破解 NCC「型式認證資料查詢」頁面的驗證碼</title>
+      <link>https://blog.gnehs.net/ncc-captcha/</link>
+      <pubDate>Wed, 08 Feb 2023 12:35:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/ncc-captcha/</guid>
+      <description>&lt;p&gt;勝勝想要寫一個程式定期檢查 NCC 網站上 Apple 最近推出的大 HomePod 是否已經通過審核。但網頁上有一個驗證碼，這讓勝勝不知如何處理。後來，勝勝找到了一個超級簡單的方法，下面就來分享給大家。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

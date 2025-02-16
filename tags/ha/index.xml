@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HA on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/ha/</link>
+    <description>Recent content in HA on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 16 Feb 2025 17:45:57 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/ha/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>改裝 RD-160HH！使用 ESP32 取代日立除濕機內建 Wi-Fi 模組</title>
+      <link>https://blog.gnehs.net/esphome-hitachi-dehumidifier/</link>
+      <pubDate>Sun, 16 Feb 2025 17:45:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/esphome-hitachi-dehumidifier/</guid>
+      <description>事情是這樣的，我的除濕機原本是用 JciHitachiHA 接進 Home Assistant，但是他常常斷線，控制時延遲也很高，我不知道是那個模組的問題還是日立的伺服器有問題。
+最近更新 Home Assistant 後那個 Integration 好像因為沒更新的關係就沒辦法使用了，後來爬到支援 Wi-Fi 模組的可以使用 ESP32 接上去控制
+好處  內網控制：不用再走日立的伺服器操控，就算網路斷掉或他們伺服器關掉也還能控制 低延遲：因為在內網操控的關係，延遲超低。 沒有追蹤：透過開源的 ESPHome，除濕機的使用資料也不會被傳進日立的伺服器 更穩定的連線品質：ESPHome 和 Home Assistant 是好朋友，不用擔心更新後除濕機就連不上  準備材料  ESP32 開發板 支援 TaiSEIA 的除濕機 一些杜邦線  改裝 先幫 ESP32 燒錄 ESPHome 先在 ESPHome 裡設定好你的 ESP32，等等接好之後如果要修改設定的話可以用無線 OTA 的方式更新
+可以參考這個型號非常類似的 RD-240HH 的設定檔：dehumidifier-faikin-rd-240hh.yaml 我有試過功能應該都是正常的
+拆機 首先把除濕機背板的螺絲都拆掉
+ 我這台在把手裡面還有兩個螺絲，要記得拆掉，不要大力出奇蹟
+  水箱那邊也有藏螺絲，一定要拆掉
+ 接線 拆掉原廠模組，把 ESP32 接上去，另外因為 ESP32 的電壓是 3.3V，可能會需要降壓，但是網路上有討論說 ESP32 可以不降壓，你自己決定
+接線按照以下指示：
+ 除濕機的 TX 接到 ESP32 的 RX（這個你要自己在 ESPHome 的設定檔裡設定針腳） 除濕機的 RX 接到 ESP32 的 TX（這個你要自己在 ESPHome 的設定檔裡設定針腳） 除濕機的 GND 接到 ESP32 的 GND 除濕機的 5V 接到 ESP32 的 VIN  接好後大概長這樣（我這邊少接了一條線） 測試看看 複製設定檔並刷入到 ESP32，測試看看接入有沒有問題，沒問題的話把 ESP32 固定好就可以把背板裝回去了</description>
+    </item>
+    
+    <item>
+      <title>從 TaiSEIA 到 Matter：智慧家電互聯互通的未來探索</title>
+      <link>https://blog.gnehs.net/from-taiseia-to-matter-the-future-of-smart-home-interoperability/</link>
+      <pubDate>Sun, 09 Feb 2025 02:10:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/from-taiseia-to-matter-the-future-of-smart-home-interoperability/</guid>
+      <description>最近剛好在改造家裡的除濕機，發現他用的是 TaiSEIA 的協議，很意外的是他是台灣工業部攜手其他廠商制定的協議，但查了官網寫著「提昇產業技術、促進智慧能源產業間之合作」等等，對我來說我想要的是否他可以實現「互聯互通」，讓我只需要一個 APP 就能操控家中所有智慧裝置。
+互聯互通？現在沒辦法 確實，TaiSEIA 解決了智慧家電的溝通問題，讓不同品牌的設備能夠「說著同一種語言」。
+但就實際情況來說，即便各設備能夠彼此溝通，它們仍然被限制在各自廠商打造的生態系中，國際牌的裝置只能在國際牌的 APP 裡操控，日立的裝置也僅限於在日立的 APP 裡控制，並沒有一個統一的地方可以集中控制所有裝置。
+想像一下，如果你購買了不同品牌的設備，每次調整設備時都必須不停切換不同廠商的 APP，這無疑是一場災難。
+隱私 要在廠商專屬的 APP 中操作設備，就必須將設備連接至廠商的雲端伺服器。 這也意味著，每一次操作都有可能被記錄與分析，有些 APP 還有透過 GPS 偵測你在家來實現自動開關冷氣的功能。
+雖然目前尚無確切證據顯示廠商濫用這些資料，但若相關數據遭到外洩，便可能暴露使用者的地址及生活作息，從而帶來潛在的隱憂。
+閉源壁壘和地域限制 根據現有資訊，TaiSEIA 協議似乎是閉源的，我網路上找不到相關程式碼，只有參與該協議的廠商才清楚其運作原理。更因為該協議主要針對台灣市場而設計，僅限於本土智慧家電的應用，使得其影響力和擴展性大打折扣。
+在這樣的生態系中，是否有可能打破廠商之間的壁壘，實現真正的跨平台整合，我可能要為這點打上一個大問號了。
+Matter：嶄新的智慧家庭協議 2022 年，有個新的智慧家庭協議誕生了，Matter，由各大科技巨頭攜手建立起的新協議，包含了蘋果、Google、IKEA 與亞馬遜等超過六百家公司參與其中。Matter 不僅解決不同品牌設備間的溝通問題，更在設計上著重於本地化控制與隱私保護，為使用者帶來更順暢且安全的操作體驗。
+與傳統需依賴雲端伺服器進行控制的方式不同，Matter 協議支援使用者直接在家中透過手機等裝置進行本地控制。這樣的設計有多項顯著優點：
+  即時反應，操作流暢
+由於控制指令不需要經過廠商的伺服器，設備之間的通訊延遲大幅降低，使用者在操控時能夠感受到更即時的回應。
+  網路中斷也能正常使用
+即使外部網路暫停或雲端伺服器異常，Matter 協議依然能夠維持本地控制，確保智慧家電在任何情況下都能運作。甚至未來某家廠商關閉了雲端服務，你的智慧家電並不會瞬間變成「智障家電」，依然能夠透過手機進行操作。
+  隱私保護更到位
+因為不必將個人資料上傳至第三方伺服器，使用者的隱私風險顯著降低。資料僅在本地網路中傳遞，讓使用者對自身資訊的掌握更有保障。
+  更棒的是他是開放原始碼的協定，你可以在網路上找到相關的程式碼，甚至是 SDK 讓廠商可以把自家的裝置簡單的接上這個平台，無論是 Android 或是 iOS 裝置，都可以在內建的或甚至第三方的智慧家庭 APP 操控設備。
+我們現有的 TaiSEIA 家電也可以加進 Matter 嗎？ 理論上，現有的智慧家庭設備可以透過軟體更新或更換相容模組的方式，來支援 Matter 協議。但究竟各家廠商是否願意投入資源進行相應升級，仍需市場與時間來驗證。
+結論 從 2017 年 10 月 TaiSEIA 協議發佈至今，雖然它為早期智慧家庭市場帶來了一定的進展，但由於設備受限於各自的生態系、隱私問題以及閉源特性，真正的互聯互通仍然難以實現。Matter 協議以其開放原始碼和跨平台的優勢，為未來的智慧家庭市場提供了更加開放與包容的發展方向。</description>
+    </item>
+    
+    <item>
+      <title>在 Home Assistant 中顯示 BTC 等虛擬貨幣價格</title>
+      <link>https://blog.gnehs.net/add-btc-to-ha/</link>
+      <pubDate>Wed, 22 Sep 2021 09:30:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/add-btc-to-ha/</guid>
+      <description>&lt;p&gt;這篇文章將教您如何在 Home Assistant 中顯示 BTC 等虛擬貨幣價格。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

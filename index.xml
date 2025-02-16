@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>勝勝</title>
+    <link>https://blog.gnehs.net/</link>
+    <description>Recent content on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 16 Feb 2025 17:45:57 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>改裝 RD-160HH！使用 ESP32 取代日立除濕機內建 Wi-Fi 模組</title>
+      <link>https://blog.gnehs.net/esphome-hitachi-dehumidifier/</link>
+      <pubDate>Sun, 16 Feb 2025 17:45:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/esphome-hitachi-dehumidifier/</guid>
+      <description>事情是這樣的，我的除濕機原本是用 JciHitachiHA 接進 Home Assistant，但是他常常斷線，控制時延遲也很高，我不知道是那個模組的問題還是日立的伺服器有問題。
+最近更新 Home Assistant 後那個 Integration 好像因為沒更新的關係就沒辦法使用了，後來爬到支援 Wi-Fi 模組的可以使用 ESP32 接上去控制
+好處  內網控制：不用再走日立的伺服器操控，就算網路斷掉或他們伺服器關掉也還能控制 低延遲：因為在內網操控的關係，延遲超低。 沒有追蹤：透過開源的 ESPHome，除濕機的使用資料也不會被傳進日立的伺服器 更穩定的連線品質：ESPHome 和 Home Assistant 是好朋友，不用擔心更新後除濕機就連不上  準備材料  ESP32 開發板 支援 TaiSEIA 的除濕機 一些杜邦線  改裝 先幫 ESP32 燒錄 ESPHome 先在 ESPHome 裡設定好你的 ESP32，等等接好之後如果要修改設定的話可以用無線 OTA 的方式更新
+可以參考這個型號非常類似的 RD-240HH 的設定檔：dehumidifier-faikin-rd-240hh.yaml 我有試過功能應該都是正常的
+拆機 首先把除濕機背板的螺絲都拆掉
+ 我這台在把手裡面還有兩個螺絲，要記得拆掉，不要大力出奇蹟
+  水箱那邊也有藏螺絲，一定要拆掉
+ 接線 拆掉原廠模組，把 ESP32 接上去，另外因為 ESP32 的電壓是 3.3V，可能會需要降壓，但是網路上有討論說 ESP32 可以不降壓，你自己決定
+接線按照以下指示：
+ 除濕機的 TX 接到 ESP32 的 RX（這個你要自己在 ESPHome 的設定檔裡設定針腳） 除濕機的 RX 接到 ESP32 的 TX（這個你要自己在 ESPHome 的設定檔裡設定針腳） 除濕機的 GND 接到 ESP32 的 GND 除濕機的 5V 接到 ESP32 的 VIN  接好後大概長這樣（我這邊少接了一條線） 測試看看 複製設定檔並刷入到 ESP32，測試看看接入有沒有問題，沒問題的話把 ESP32 固定好就可以把背板裝回去了</description>
+    </item>
+    
+    <item>
+      <title>自建電子發票儲存服務</title>
+      <link>https://blog.gnehs.net/self-hosted-e-invoice-storage-service/</link>
+      <pubDate>Sun, 16 Feb 2025 16:16:35 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/self-hosted-e-invoice-storage-service/</guid>
+      <description>在 APP 商店有很多發票的 APP，但大部分的都會儲存你資料進行分析，從發票資料中，甚至可以知道你平常在哪消費等資訊，可以參考這篇文章：從 API 串接角度評估電子發票存摺 APP 可以怎樣出賣使用者個資
+我真的沒有想繼續把資料賣給這些廠商，所以開發了一個發票儲存服務，我已經包成 Docker 格式，只要你有相關的經驗，應該能夠在十分鐘內架設好這個服務。
+修改密碼 為了避免原本的發票 APP 繼續取得你的發票資訊，建議你可以把密碼改掉後再進行下面的步驟，你可以到 財政部電子發票整合服務平台 做這件事
+架設 NocoDB NocoDB 是一款資料庫的介面軟體，可以透過他查看資料庫內的資料，可以連接現有的資料庫，或是使用內建的 SQLite 來作為資料庫，可以參考 官方的部署指南 來了解如何部署。
+在 NocoDB 建立 API Key 和取得 Base ID 這是等一下會用到的妙妙工具
+架設 nocodb-einvoice NocoDB einvoice 是由我開發的發票匯入工具，可以設定成每天自動執行把發票資料匯入到 NocoDB，你可以參考 README 文件 來了解如何架設
+環境變數 必填  NOCODB_URL: NocoDB 的 URL NOCODB_API_KEY: NocoDB 的 API Key NOCODB_BASE_ID: NocoDB 的 Base ID （可以在瀏覽器的網址列中找到） EINVOICE_USERNAME: 電子發票的帳號（電話號碼） EINVOICE_PASSWORD: 電子發票的密碼（又稱驗證碼）  選填  CRON_SCHEDULE  預設值：0 3 * * *，每天凌晨 3 點執行 可參考 crontab.</description>
+    </item>
+    
+    <item>
+      <title>從 TaiSEIA 到 Matter：智慧家電互聯互通的未來探索</title>
+      <link>https://blog.gnehs.net/from-taiseia-to-matter-the-future-of-smart-home-interoperability/</link>
+      <pubDate>Sun, 09 Feb 2025 02:10:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/from-taiseia-to-matter-the-future-of-smart-home-interoperability/</guid>
+      <description>最近剛好在改造家裡的除濕機，發現他用的是 TaiSEIA 的協議，很意外的是他是台灣工業部攜手其他廠商制定的協議，但查了官網寫著「提昇產業技術、促進智慧能源產業間之合作」等等，對我來說我想要的是否他可以實現「互聯互通」，讓我只需要一個 APP 就能操控家中所有智慧裝置。
+互聯互通？現在沒辦法 確實，TaiSEIA 解決了智慧家電的溝通問題，讓不同品牌的設備能夠「說著同一種語言」。
+但就實際情況來說，即便各設備能夠彼此溝通，它們仍然被限制在各自廠商打造的生態系中，國際牌的裝置只能在國際牌的 APP 裡操控，日立的裝置也僅限於在日立的 APP 裡控制，並沒有一個統一的地方可以集中控制所有裝置。
+想像一下，如果你購買了不同品牌的設備，每次調整設備時都必須不停切換不同廠商的 APP，這無疑是一場災難。
+隱私 要在廠商專屬的 APP 中操作設備，就必須將設備連接至廠商的雲端伺服器。 這也意味著，每一次操作都有可能被記錄與分析，有些 APP 還有透過 GPS 偵測你在家來實現自動開關冷氣的功能。
+雖然目前尚無確切證據顯示廠商濫用這些資料，但若相關數據遭到外洩，便可能暴露使用者的地址及生活作息，從而帶來潛在的隱憂。
+閉源壁壘和地域限制 根據現有資訊，TaiSEIA 協議似乎是閉源的，我網路上找不到相關程式碼，只有參與該協議的廠商才清楚其運作原理。更因為該協議主要針對台灣市場而設計，僅限於本土智慧家電的應用，使得其影響力和擴展性大打折扣。
+在這樣的生態系中，是否有可能打破廠商之間的壁壘，實現真正的跨平台整合，我可能要為這點打上一個大問號了。
+Matter：嶄新的智慧家庭協議 2022 年，有個新的智慧家庭協議誕生了，Matter，由各大科技巨頭攜手建立起的新協議，包含了蘋果、Google、IKEA 與亞馬遜等超過六百家公司參與其中。Matter 不僅解決不同品牌設備間的溝通問題，更在設計上著重於本地化控制與隱私保護，為使用者帶來更順暢且安全的操作體驗。
+與傳統需依賴雲端伺服器進行控制的方式不同，Matter 協議支援使用者直接在家中透過手機等裝置進行本地控制。這樣的設計有多項顯著優點：
+  即時反應，操作流暢
+由於控制指令不需要經過廠商的伺服器，設備之間的通訊延遲大幅降低，使用者在操控時能夠感受到更即時的回應。
+  網路中斷也能正常使用
+即使外部網路暫停或雲端伺服器異常，Matter 協議依然能夠維持本地控制，確保智慧家電在任何情況下都能運作。甚至未來某家廠商關閉了雲端服務，你的智慧家電並不會瞬間變成「智障家電」，依然能夠透過手機進行操作。
+  隱私保護更到位
+因為不必將個人資料上傳至第三方伺服器，使用者的隱私風險顯著降低。資料僅在本地網路中傳遞，讓使用者對自身資訊的掌握更有保障。
+  更棒的是他是開放原始碼的協定，你可以在網路上找到相關的程式碼，甚至是 SDK 讓廠商可以把自家的裝置簡單的接上這個平台，無論是 Android 或是 iOS 裝置，都可以在內建的或甚至第三方的智慧家庭 APP 操控設備。
+我們現有的 TaiSEIA 家電也可以加進 Matter 嗎？ 理論上，現有的智慧家庭設備可以透過軟體更新或更換相容模組的方式，來支援 Matter 協議。但究竟各家廠商是否願意投入資源進行相應升級，仍需市場與時間來驗證。
+結論 從 2017 年 10 月 TaiSEIA 協議發佈至今，雖然它為早期智慧家庭市場帶來了一定的進展，但由於設備受限於各自的生態系、隱私問題以及閉源特性，真正的互聯互通仍然難以實現。Matter 協議以其開放原始碼和跨平台的優勢，為未來的智慧家庭市場提供了更加開放與包容的發展方向。</description>
+    </item>
+    
+    <item>
+      <title>四家日本 eSIM 卡使用心得</title>
+      <link>https://blog.gnehs.net/japan-esim/</link>
+      <pubDate>Thu, 06 Jun 2024 01:30:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/japan-esim/</guid>
+      <description>疫情趨緩以來，勝勝去了日本五六次了，也買了好幾次的 eSIM 卡，有些心得想分享給大家！
+這六次去日本我用過好幾家的網路：台灣大哥大、DJB、Joytel 和 Yoho Mobile 心得的部分我就一一在下面分開介紹吧！
+台灣大哥大 台灣大哥大的 eSIM 是我跑去門市臨櫃辦的預付卡漫遊，他會把 eSIM 的 QR code 印在 A4 紙上給你，也是四家裡唯一一家要對證件的。
+這真的是我用過最雷的，我在 2023 年七月去大阪，網路慢到爆，連 IG 限動都要傳三分鐘才出去，整個快抓狂，後來緊急買了其他家的 eSIM 卡，網路速度才比較正常一點。
+另外因為是漫遊的關係，網路會繞回台灣，所以你拿到的 IP 會是台灣的，算有好有壞吧。
+除了不能網路上買之外，網路還超雷，不推。
+DJB 這家我買了三次，網路上直接刷卡就寄到信箱了，在日本的速度也不錯。
+雖然很好用，但有時「吃到飽」（一天用個 3~5 GB 的話）會被降速，需要聯繫客服解除，而且是隔天才會恢復正常。
+他們家我剛剛去看沒有賣總量的方案，一天如果只能用個 3GB 的話算起來比其他家貴好多，目前而言建議買其他家的。
+Joytel 我買 20GB 的方案，基本上沒什麼雷點，而且寄來的信還很貼心附上好多商店優惠券，非常貼心！
+Yoho Mobile  2025/01 更新：後來又買了一次，發現官網大改版，而且電信商變成中國的，雖然出口是新加坡不是中國，但是延遲變得靠北高，不推
+ 這家是我最近才發現的，好像是新加坡的公司，網路是穩穩的可用狀態，還有 APP 可以查剩餘流量，不過 APP 開起來很慢。
+另外網路上有很多他們家的優惠碼，要買的話可以自己去找一下，10GB 不含折扣才 9.9 美元（大概是 320 台幣），超級便宜！
+但是有些流量似乎是 Joytel 比較便宜，買之前可以認真比價一下。
+熱點模式 我是用 iPhone，這家的熱點分享預設是打不開的，需要另外設定，方法是把所有的 APN 欄位都填上 vmobile.jp 就可以了！</description>
+    </item>
+    
+    <item>
+      <title>在其他裝置上連接 Synology NAS 的 UPS 伺服器</title>
+      <link>https://blog.gnehs.net/synology-ups/</link>
+      <pubDate>Wed, 05 Jun 2024 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/synology-ups/</guid>
+      <description>事情是這樣的，勝勝家最近停電，但是我忘記搞定 UPS 伺服器，所以只有透過 USB 與 UPS 連線的 Synology NAS 好好關機，為了防止硬碟變得破破爛爛，要幫其他裝置也都設定好自動關機。
+Synology 有個設定可以當作 UPS 伺服器，可以把關機訊號傳遞給在網路上的其他裝置，但是在設定 UPS 時，無論是在 Windows 上或是 UNRAID 都無法連上 UPS 伺服器，可是我明明就有把 IP 都填進去白名單。
+後來在這篇文章上發現原來 Synology 是使用寫死的 UPS 名稱、帳號和密碼，照著輸入就能成功連線了！
+ Notes on Synology
+Synology&amp;rsquo;s NUT implementation uses hardcoded values for several items:
+ UPS Name: ups Username: monuser Password: secret   順便提一下 UPS 用的軟體好了！
+我在 Windows 上用的是 WinNUT-Client
+UNRAID 上用的是 Network UPS Tools (NUT) for UNRAID 還附了一個可以放在 footer 的小工具</description>
+    </item>
+    
+    <item>
+      <title>台灣里程信用卡大評比</title>
+      <link>https://blog.gnehs.net/202404-creditcard/</link>
+      <pubDate>Thu, 18 Apr 2024 18:25:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/202404-creditcard/</guid>
+      <description>嗨，這裡是最近想辦里程信用卡的勝勝，但是里程的運作超級複雜，每家銀行的回饋和航空公司里程的算法又不太一樣，沒辦法直接使用幾元一哩來直接評比，算起來超級麻煩。
+所以勝勝整理了一張超大表格，比較了各家信用卡要換到台北東京來回機票要多少里程，並且換算了現金回饋率，讓你可以直接和其他卡或甚至現金回饋的信用卡做對比，連結在這裡，歡迎你載下來玩玩看！
+https://docs.google.com/spreadsheets/d/1Hwq1aKR2IBZiJ4v_acl_qukY4uQ9JQgy1otdxuc_aPQ/edit?usp=sharing
+ 這份文件是在 2024/04/18 整理的，數字可能因為航空公司里程調整或銀行回饋調整而有所變動，而且勝勝也有可能看錯或算錯，請自己做好功課，勝勝不打算為表格裡的資料負責
+ 為什麼要玩里程 里程可以帶來超越現金回饋的價值，如果你常出國使用里程卡可以換到便宜的機票，但這件事會比較燒腦。
+你要先知道  阿拉斯加航空里程經常特價，大概每兩個月至少會有一次，可以以便宜的價格換到星宇航空的機票，表格中部分數字從這裡換算而來 台新最近才改用台新 Point 回饋，270 points 可以換到亞萬 1,000 哩，隔壁棚的國泰 Cube 要 360 小樹點才能換到相同里程 國泰航空和國泰銀行沒有關聯，是不同的公司  如何看這張表格  這張表格沒有計算信用卡給的福利，像是美國運通長榮航空簽帳白金卡看起來換算的現金回饋率很爛，但是其實吃一些餐廳都有買一送一的回饋，還有 Priority Pass 無限次使用之類的，但勝勝不在意這些，所以沒認真算 國內外的現金回饋率，這是根據阿拉斯加航空里程（以 60% 加成計算）兌換星宇航空的商務艙和經濟艙所需里程價格計算 你可以根據換算回饋率來看刷哪張卡比較划算，表格中一些非里程卡有適用範圍，刷之前要看清楚！ 環球票可以讓里程發揮最大的價值，但是時間和開票規則都很複雜，你可以在「亞萬環球票換算」這個 sheet 看到一些亞萬環球票的計算結果，其他的部分就要自己爬文研究了  刷哪張好  如果你常用 LINE Pay、全支付或全盈+PAY 之類的行動支付，推薦你辦台新 @GoGo 卡，換算下來等於 4.14% 節假日國內可以刷台新玫瑰 Giving 卡，換算下來等於 3.22% 國外的話推薦刷匯豐旅人無限卡，換算回饋率等於 5.80%，是表格內最高的回饋率  後記 我後來發現台灣的航空公司（華航、長榮、星宇）都是亞洲航點固定里程的，也就是飛北海道和東京都是相同里程，以東京來比較的話會有點吃虧，所以另外算了一張北海道來回的表。
+ 不過亞萬那邊就沒有直飛了，會需要轉機 每個航點的所需里程不同，有興趣也可以自己算一個會比較清楚！  結論  大部分的里程卡其實都不值得辦 要辦的話推薦匯豐旅人無限卡，可以用便宜的里程換到 JAL 的機票，還可以換亞萬的里程，里程回饋也不比其他卡差 如果你手上還有小樹點，如果只換單點來回的話，建議你直接拿去折現金比較划算，換成里程的話回饋率從 3% 掉到 2.</description>
+    </item>
+    
+    <item>
+      <title>ThinkVision P27u-20 開箱</title>
+      <link>https://blog.gnehs.net/p27u-20/</link>
+      <pubDate>Sun, 20 Aug 2023 18:00:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/p27u-20/</guid>
+      <description>嗨，這裡是勝勝。最近我買了一款非常值得推薦的螢幕，但我發現網上的開箱文實在少之又少，因此我決定自己撰寫一篇分享給大家。 最近我一直在尋找適合的 4K 螢幕，我逛遍了從 PChome 到亞馬遜的各大線上平台。最後在臉書的廣告中我找到了這款 ThinkVision P27u-20。不過，因為他們沒有付我廣告費，我就不放連結了，要買的自己找。
+超級便宜 這款螢幕多方面都很出色，其中最讓我驚訝的是價格便宜，只要 $14,280。而其內建的 Thunderbolt Dock 在其他地方售價約萬元，換句話說，你實際上只用出差不多四千塊就能得到一個 4K 螢幕，而且色域覆蓋相當高，非常的物超所值！
+色域  99.1% DCI-P3 99.5% Adobe RGB 100% sRGB 100% BT.709 83.7% BT.2020  Thunderbolt 4 另一個讓我眼睛一亮的是對 Thunderbolt 4 的支援。目前市場上支援 Thunderbolt 的螢幕還很少，價格也相對較高。比如說，BenQ 的 PD2725U 就要三萬元附近。
+用一條線連接全部的設備 這款螢幕另一個賣點在於用一條線就能連接所有設備。除了能提供 100W 的充電外，還有五個 USB 接孔、網路線、DP 跟兩個 HDMI 。更重要的是，這台螢幕有兩個 Thunderbolt 4，一邊可以連接電腦，在另一邊你還可以繼續接一個螢幕。如果需要帶著電腦外出，只需拔掉一根線就可以了，非常優雅 &amp;gt;&amp;lt;
+缺點 當然，這款螢幕也並非完美無缺，仍有一些小瑕疵。例如，有美國和韓國的使用者反映在螢幕運作時會有微弱的電流聲。我自己的確也有發現這個問題，但如果你日常都沒有注意到烹煮時電磁爐的嗡嗡聲，那你可能也不會注意到這個電流聲。此外，電流聲只在非常接近螢幕時你才能聽到這個聲音。
+此外，這款螢幕的內建喇叭音質並不理想，但考慮到螢幕的主要目的並非播放音樂，這一點也頗合理。而且，這款螢幕的下巴，相比我之前使用的 Dell U2720Q 的四面窄邊框來說厚了很多，視覺效果略遜一籌。
+另外，網站上的規格表明，其 HDR 峰值亮度只有 450nit，相對於一些 HDR1000 的設備來說並不出眾。
+但即便如此，我還是極力推薦這款螢幕，因為其優點遠大於缺點，並且價格實惠，性價比高。
+後記 我後來發現螢幕的 Thunderbolt 4 downstream 不會動，連手機接上去都不會充電，原本以為壞了打算去送修，後來看說明書才知道把螢幕設定中的 Super USB Charging 關掉就好了 .</description>
+    </item>
+    
+    <item>
+      <title>ChatGPT 能夠勝任字幕翻譯的任務嗎？</title>
+      <link>https://blog.gnehs.net/chatgpt-subtitle/</link>
+      <pubDate>Wed, 08 Mar 2023 10:13:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/chatgpt-subtitle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.gnehs.net/img/223497376-71fc2b16-d77e-4993-9acb-9a59c64ed31a.png&#34; alt=&#34;&#34;&gt;
+在 ChatGPT 應用百花齊放的如今，勝勝想要知道 ChatGPT 是否能夠勝任字幕翻譯的任務，於是便開始寫了一個程式來看看 ChatGPT 的表現如何。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>第一次組電腦，好緊張 &gt;&lt;</title>
+      <link>https://blog.gnehs.net/2023-pc/</link>
+      <pubDate>Wed, 22 Feb 2023 01:10:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/2023-pc/</guid>
+      <description>&lt;p&gt;為了進入夢想中的學校，勝勝花了重金購買了新的電腦，所以想記錄一下在 2023 年 2 月的當下，組裝電腦到底花了多少錢。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>破解 NCC「型式認證資料查詢」頁面的驗證碼</title>
+      <link>https://blog.gnehs.net/ncc-captcha/</link>
+      <pubDate>Wed, 08 Feb 2023 12:35:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/ncc-captcha/</guid>
+      <description>&lt;p&gt;勝勝想要寫一個程式定期檢查 NCC 網站上 Apple 最近推出的大 HomePod 是否已經通過審核。但網頁上有一個驗證碼，這讓勝勝不知如何處理。後來，勝勝找到了一個超級簡單的方法，下面就來分享給大家。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>誰是最聰明的銀行智慧客服</title>
+      <link>https://blog.gnehs.net/who-is-the-smartest-bank-chatbot/</link>
+      <pubDate>Thu, 02 Feb 2023 15:46:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/who-is-the-smartest-bank-chatbot/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.gnehs.net/img/SCR-20230202-k6t.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;是這樣的，勝勝原本在偷臭銀行的智慧客服，還寫了 &lt;a href=&#34;https://github.com/gnehs/userscripts/raw/main/intelligent-replacer.user.js&#34;&gt;Userscript&lt;/a&gt; 把「智能」換成「智障」，勝勝在玩客服的時候越玩越起勁，所以就乾脆來比比看到底誰是最聰明的銀行智慧客服？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>讓 Google Drive 下載的解壓檔解壓縮到相同資料夾</title>
+      <link>https://blog.gnehs.net/merge-google-drive-zips/</link>
+      <pubDate>Sat, 24 Dec 2022 01:32:00 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/merge-google-drive-zips/</guid>
+      <description>勝勝剛從 Google Drive 撈了一個資料夾下來，可是你也知道的，Google 會把它拆成很多小的壓縮檔，於是解壓縮後就會變成這樣
+ abc abc 1 abc 2 &amp;hellip;  勝勝希望可以將解壓縮的檔案都放在一起，經過勝勝的調查，發現了這個指令
+mkdir combined for archive in *.zip; do ditto -V -x -k --sequesterRsrc --rsrc &amp;#34;$archive&amp;#34; combined; done 這樣就會把目前資料夾內的 zip 檔案通通解壓縮，並丟到 combined 資料夾內，也順帶解決參考資料第一個中會出現 UTF-8 編碼錯誤的問題
+ 參考資料
+ https://stackoverflow.com/questions/68201952/merge-combine-multiple-downloaded-zip-files-from-google-drive-on-mac https://github.com/CocoaPods/CocoaPods/issues/7711   </description>
+    </item>
+    
+    <item>
+      <title>將 Google Fit 體重資料匯入至 Apple Health</title>
+      <link>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</link>
+      <pubDate>Tue, 23 Aug 2022 23:42:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</guid>
+      <description>因為勝勝希望可以把 Google Fit 的體重資料匯入到蘋果的「健康」 App 裡面，不過剛開始找只有看到付費 APP 提供轉換，在勝勝努力之下，終於找到了方法，分享給大家，如果你也有相同的需求，照著這篇教學就可以了。 &amp;gt;&amp;lt;
+匯出 Google Fit 資料 首先你要先去 Google Takeout 把你的 Google Fit 資料通通匯出，記得勾 Google Fit 就好，不要選太多不然匯出會很慢很慢。
+整理資料 找到你的體重檔案 你應該會在匯出的檔案中找到 derived_com.google.weight_com.google.android.g.json，打開後大概長這樣。
+{ &amp;#34;Data Source&amp;#34;: &amp;#34;derived:com.google.weight:com.google.android.gms:merge_weight&amp;#34;, &amp;#34;Data Points&amp;#34;: [ { &amp;#34;fitValue&amp;#34;: [ { &amp;#34;value&amp;#34;: { &amp;#34;fpVal&amp;#34;: 55 } } ], &amp;#34;originDataSourceId&amp;#34;: &amp;#34;raw:com.google.weight:com.google.android.apps.fitness:user_input&amp;#34;, &amp;#34;endTimeNanos&amp;#34;: 1434620350091000000, &amp;#34;dataTypeName&amp;#34;: &amp;#34;com.google.weight&amp;#34;, 只拿需要的資料 我們只需要其中的日期與體重而已，下面我們分成兩個方法進行轉換，後面的雖然可能比較難懂，不過如果你會的話會快很多
+如果你不會 Javascript 你可以透過線上的 JSON to CSV Converter 把你的 JSON 轉換為 Excel 檔，下載成 Excel 檔案後清除多餘的欄位，並將欄位順序調整為日期、體重。
+對了，日期的部分你可以透過 =TEXT(日期欄位/1000000/24/60/60/1000 + 25569,&amp;quot;YYYY-MM-DD HH:MM&amp;quot;) 進行轉換，不然可能捷徑會看不懂這個日期。</description>
+    </item>
+    
+    <item>
+      <title>勝勝的邀請碼們</title>
+      <link>https://blog.gnehs.net/invite-codes/</link>
+      <pubDate>Fri, 08 Apr 2022 00:37:59 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/invite-codes/</guid>
+      <description>&lt;p&gt;因為勝勝有好多邀請碼，所以就整理在這邊了，如果你用了這邊的邀請碼勝勝會很開心喔！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在網頁上展示酷炫的透明影片</title>
+      <link>https://blog.gnehs.net/web-transparent-videos/</link>
+      <pubDate>Thu, 07 Apr 2022 14:32:39 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/web-transparent-videos/</guid>
+      <description>&lt;p&gt;你有看過透明影片嗎，有想過在網頁上放超酷的透明影片製造與眾不同的視覺效果嗎，這篇教學會一步一步教你如何將透明影片放在網頁上，並講述現有瀏覽器的限制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Home Assistant 中顯示 BTC 等虛擬貨幣價格</title>
+      <link>https://blog.gnehs.net/add-btc-to-ha/</link>
+      <pubDate>Wed, 22 Sep 2021 09:30:57 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/add-btc-to-ha/</guid>
+      <description>&lt;p&gt;這篇文章將教您如何在 Home Assistant 中顯示 BTC 等虛擬貨幣價格。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>利用 GitHub Action 自動部署 Hugo 部落格</title>
+      <link>https://blog.gnehs.net/hugo-github-actions/</link>
+      <pubDate>Wed, 31 Mar 2021 11:17:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/hugo-github-actions/</guid>
+      <description>&lt;p&gt;在 commit 後讓 GitHub 幫你直接部署網站！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>將部落格遷移到 Hugo</title>
+      <link>https://blog.gnehs.net/move-blog-to-hugo/</link>
+      <pubDate>Sat, 20 Mar 2021 15:30:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/move-blog-to-hugo/</guid>
+      <description>&lt;p&gt;其實我之前就打算把部落格從 WordPress 搬走了，只是之前都懶得弄，Hugo 除了很快之外，也能直接用 Markdown 來寫文章，除此之外不需要資料庫用起來真的很香。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>將 WordPress 文章匯入到 Hugo</title>
+      <link>https://blog.gnehs.net/wordpress-posts-to-hugo/</link>
+      <pubDate>Sun, 14 Mar 2021 21:31:50 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/wordpress-posts-to-hugo/</guid>
+      <description>Hugo 官方有推薦幾個套件來協助文章的遷移，我先是先用了 wordpress-to-hugo-exporter，不過安裝後似乎無法成功開啟。
+之後我用了 blog2md 便能順利匯入文章了。
+事前準備  將文章從 WordPress 匯出 下載 blog2md 安裝 Node.js  開始轉換  cd ./blog2md-master/ 安裝 node 套件（註：需要 node.js） npm i 轉換檔案 node index.js w your-wordpress-backup-export.xml out  之後將 out 資料夾中的內容複製到 /content/posts 就完工了！</description>
+    </item>
+    
+    <item>
+      <title>關於可愛勝勝</title>
+      <link>https://blog.gnehs.net/about/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/about/</guid>
+      <description>這裡是勝勝的部落格，你可以前往勝勝的 個人網站 了解更多有關勝勝的資訊！</description>
+    </item>
+    
+    <item>
+      <title>如何使用 Javascript 將多部影片混合為一個影片</title>
+      <link>https://blog.gnehs.net/js-merge-video/</link>
+      <pubDate>Sat, 06 Jun 2020 15:18:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-merge-video/</guid>
+      <description>&lt;p&gt;最近在製作 &lt;a href=&#34;https://howfun.futa.gg/?text=%E9%9F%93%E5%9C%8B%E7%91%9C%E6%8E%B0%E6%8E%B0&#34;&gt;How 發聲器&lt;/a&gt; 因為影片每個發音播放時都會有間隙，超討厭，但 &lt;a href=&#34;https://howger.orange.tw/?mode=share&amp;amp;id=5edbb61209015&#34;&gt;How哥產生器&lt;/a&gt; 聽說是用 ffmpeg 來做輸出，要後端而且看起來很燒錢，所以在尋找純前端的做法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 PWA 應用程式中使用遮罩圖示（maskable icon）</title>
+      <link>https://blog.gnehs.net/pwa-maskable-icon/</link>
+      <pubDate>Sun, 22 Dec 2019 10:28:35 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/pwa-maskable-icon/</guid>
+      <description>&lt;p&gt;Chrome 最近釋出 79 版，終於支援了遮罩圖示（看看 Android 8 都出多久了），這篇教學會教你如何使用遮罩圖示。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>透過 JS 即時偵測系統外觀是否處於深色模式</title>
+      <link>https://blog.gnehs.net/js-detect-dark-mode/</link>
+      <pubDate>Sat, 14 Dec 2019 12:36:43 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/js-detect-dark-mode/</guid>
+      <description>&lt;p&gt;在撰寫網頁時若要用 JS 來檢測系統的主題，你會需要用到 CSS 的 &lt;code&gt;prefers-color-scheme: dark&lt;/code&gt; 來檢測是否適用於該條規則，我們可以在 js 使用 &lt;code&gt;matchMedia&lt;/code&gt; 來查看檢測後的結果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>發送 XHR 時驗證 reCAPTCHA</title>
+      <link>https://blog.gnehs.net/tg-submit-recaptcha/</link>
+      <pubDate>Sun, 05 May 2019 04:08:28 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/tg-submit-recaptcha/</guid>
+      <description>&lt;p&gt;reCAPTCHA 是眾所皆知的工人 OCR 驗證系統，在 v3 中，直接由分數判斷是否是機器人，因此也不需要核取方塊了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>YouTube 字幕特效是如何製作的？</title>
+      <link>https://blog.gnehs.net/youtube-webvtt/</link>
+      <pubDate>Tue, 29 Jan 2019 15:21:05 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/youtube-webvtt/</guid>
+      <description>&lt;p&gt;因為時不時可以在一些 MV 裡看見一些很庫蹦來蹦去的字幕，於是便上網搜尋，了解後發現 YouTube 用了 webVTT 當作字幕好朋友來用，可以隨意更改位置和大小，看起來應該是類似 SRT 那樣。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>讓 node-sass-middleware 轉換 SASS</title>
+      <link>https://blog.gnehs.net/node-sass-middleware/</link>
+      <pubDate>Sun, 02 Dec 2018 08:46:59 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/node-sass-middleware/</guid>
+      <description>&lt;p&gt;最近在試 node-sass-middleware，但是怎麼試都不會動，開了 log 才發現說找不到 scss 檔案&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nokia N1 B19 救磚</title>
+      <link>https://blog.gnehs.net/nokia-n1-b19/</link>
+      <pubDate>Sun, 15 Apr 2018 08:46:59 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/nokia-n1-b19/</guid>
+      <description>&lt;p&gt;我手上的 Nokia N1 因為被搞到 bootloop 不得已只好來 &lt;code&gt;adb sideload&lt;/code&gt; 了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小米行動電源 10000 高配版 保護套 開箱</title>
+      <link>https://blog.gnehs.net/mi-power-bank-protective-case/</link>
+      <pubDate>Fri, 02 Feb 2018 06:04:11 +0000</pubDate>
+      
+      <guid>https://blog.gnehs.net/mi-power-bank-protective-case/</guid>
+      <description>&lt;p&gt;因為原本的金屬外殼真的夭壽滑(而且冬天冰的要命)，而且摔了幾次，又剛好官方有活動領了一堆免運卷，於是便順勢買個保護套來套著🤔，話不多說了，底下是圖片&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[64位元]將模擬市民 2 語言更改為繁體中文</title>
+      <link>https://blog.gnehs.net/the-sims-2-change-lang/</link>
+      <pubDate>Tue, 27 Jun 2017 16:12:12 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/the-sims-2-change-lang/</guid>
+      <description>&lt;p&gt;最近想來玩一下，但是不知道出了什麼差錯，居然變成了英文，然後網上的教學都不管用，因為我是 64 位元的 QQQ&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>華為P9救磚(EVA-L09)</title>
+      <link>https://blog.gnehs.net/dload-eva-l09/</link>
+      <pubDate>Tue, 28 Feb 2017 15:19:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/dload-eva-l09/</guid>
+      <description>&lt;p&gt;標題上打EVA-L09是因為文章裡的檔案只支援這個型號啦，事實上教學應該華為的裝置都通用&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解決刷機產生的Data分區加密問題</title>
+      <link>https://blog.gnehs.net/fix-encryption-unsuccessful/</link>
+      <pubDate>Tue, 28 Feb 2017 03:07:59 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/fix-encryption-unsuccessful/</guid>
+      <description>&lt;p&gt;我是不知道其他系統或手機能不能用啦，反正我 P9 是成功了&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PWA on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/pwa/</link>
+    <description>Recent content in PWA on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 22 Dec 2019 10:28:35 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/pwa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 PWA 應用程式中使用遮罩圖示（maskable icon）</title>
+      <link>https://blog.gnehs.net/pwa-maskable-icon/</link>
+      <pubDate>Sun, 22 Dec 2019 10:28:35 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/pwa-maskable-icon/</guid>
+      <description>&lt;p&gt;Chrome 最近釋出 79 版，終於支援了遮罩圖示（看看 Android 8 都出多久了），這篇教學會教你如何使用遮罩圖示。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

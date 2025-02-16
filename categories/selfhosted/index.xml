@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selfhosted on 勝勝</title>
+    <link>https://blog.gnehs.net/categories/selfhosted/</link>
+    <description>Recent content in Selfhosted on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 16 Feb 2025 16:16:35 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/categories/selfhosted/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自建電子發票儲存服務</title>
+      <link>https://blog.gnehs.net/self-hosted-e-invoice-storage-service/</link>
+      <pubDate>Sun, 16 Feb 2025 16:16:35 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/self-hosted-e-invoice-storage-service/</guid>
+      <description>在 APP 商店有很多發票的 APP，但大部分的都會儲存你資料進行分析，從發票資料中，甚至可以知道你平常在哪消費等資訊，可以參考這篇文章：從 API 串接角度評估電子發票存摺 APP 可以怎樣出賣使用者個資
+我真的沒有想繼續把資料賣給這些廠商，所以開發了一個發票儲存服務，我已經包成 Docker 格式，只要你有相關的經驗，應該能夠在十分鐘內架設好這個服務。
+修改密碼 為了避免原本的發票 APP 繼續取得你的發票資訊，建議你可以把密碼改掉後再進行下面的步驟，你可以到 財政部電子發票整合服務平台 做這件事
+架設 NocoDB NocoDB 是一款資料庫的介面軟體，可以透過他查看資料庫內的資料，可以連接現有的資料庫，或是使用內建的 SQLite 來作為資料庫，可以參考 官方的部署指南 來了解如何部署。
+在 NocoDB 建立 API Key 和取得 Base ID 這是等一下會用到的妙妙工具
+架設 nocodb-einvoice NocoDB einvoice 是由我開發的發票匯入工具，可以設定成每天自動執行把發票資料匯入到 NocoDB，你可以參考 README 文件 來了解如何架設
+環境變數 必填  NOCODB_URL: NocoDB 的 URL NOCODB_API_KEY: NocoDB 的 API Key NOCODB_BASE_ID: NocoDB 的 Base ID （可以在瀏覽器的網址列中找到） EINVOICE_USERNAME: 電子發票的帳號（電話號碼） EINVOICE_PASSWORD: 電子發票的密碼（又稱驗證碼）  選填  CRON_SCHEDULE  預設值：0 3 * * *，每天凌晨 3 點執行 可參考 crontab.</description>
+    </item>
+    
+  </channel>
+</rss>

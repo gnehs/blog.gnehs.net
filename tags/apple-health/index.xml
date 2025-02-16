@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple Health on 勝勝</title>
+    <link>https://blog.gnehs.net/tags/apple-health/</link>
+    <description>Recent content in Apple Health on 勝勝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 23 Aug 2022 23:42:14 +0800</lastBuildDate><atom:link href="https://blog.gnehs.net/tags/apple-health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>將 Google Fit 體重資料匯入至 Apple Health</title>
+      <link>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</link>
+      <pubDate>Tue, 23 Aug 2022 23:42:14 +0800</pubDate>
+      
+      <guid>https://blog.gnehs.net/migrate-google-fit-to-apple-health/</guid>
+      <description>因為勝勝希望可以把 Google Fit 的體重資料匯入到蘋果的「健康」 App 裡面，不過剛開始找只有看到付費 APP 提供轉換，在勝勝努力之下，終於找到了方法，分享給大家，如果你也有相同的需求，照著這篇教學就可以了。 &amp;gt;&amp;lt;
+匯出 Google Fit 資料 首先你要先去 Google Takeout 把你的 Google Fit 資料通通匯出，記得勾 Google Fit 就好，不要選太多不然匯出會很慢很慢。
+整理資料 找到你的體重檔案 你應該會在匯出的檔案中找到 derived_com.google.weight_com.google.android.g.json，打開後大概長這樣。
+{ &amp;#34;Data Source&amp;#34;: &amp;#34;derived:com.google.weight:com.google.android.gms:merge_weight&amp;#34;, &amp;#34;Data Points&amp;#34;: [ { &amp;#34;fitValue&amp;#34;: [ { &amp;#34;value&amp;#34;: { &amp;#34;fpVal&amp;#34;: 55 } } ], &amp;#34;originDataSourceId&amp;#34;: &amp;#34;raw:com.google.weight:com.google.android.apps.fitness:user_input&amp;#34;, &amp;#34;endTimeNanos&amp;#34;: 1434620350091000000, &amp;#34;dataTypeName&amp;#34;: &amp;#34;com.google.weight&amp;#34;, 只拿需要的資料 我們只需要其中的日期與體重而已，下面我們分成兩個方法進行轉換，後面的雖然可能比較難懂，不過如果你會的話會快很多
+如果你不會 Javascript 你可以透過線上的 JSON to CSV Converter 把你的 JSON 轉換為 Excel 檔，下載成 Excel 檔案後清除多餘的欄位，並將欄位順序調整為日期、體重。
+對了，日期的部分你可以透過 =TEXT(日期欄位/1000000/24/60/60/1000 + 25569,&amp;quot;YYYY-MM-DD HH:MM&amp;quot;) 進行轉換，不然可能捷徑會看不懂這個日期。</description>
+    </item>
+    
+  </channel>
+</rss>
