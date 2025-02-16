@@ -7,6 +7,8 @@ draft: false
 categories: ["Selfhosted"]
 ---
 
+![](/img/self-hosted-e-invoice-storage-service/399413837-7146aa39-1938-4c05-955f-4b021b3e90b7.png)
+
 在 APP 商店有很多發票的 APP，但大部分的都會儲存你資料進行分析，從發票資料中，甚至可以知道你平常在哪消費等資訊，可以參考這篇文章：[從 API 串接角度評估電子發票存摺 APP 可以怎樣出賣使用者個資](https://blog.user.today/invoice-api-problem/)
 
 我真的沒有想繼續把資料賣給這些廠商，所以開發了一個發票儲存服務，我已經包成 Docker 格式，只要你有相關的經驗，應該能夠在十分鐘內架設好這個服務。
