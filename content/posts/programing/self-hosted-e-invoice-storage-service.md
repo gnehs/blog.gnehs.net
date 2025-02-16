@@ -4,7 +4,7 @@ author: "勝勝"
 tags: ["發票"]
 date: 2025-02-16T16:16:35+08:00
 draft: false
-categories: ["JS"]
+categories: ["Selfhosted"]
 ---
 
 在 APP 商店有很多發票的 APP，但大部分的都會儲存你資料進行分析，從發票資料中，甚至可以知道你平常在哪消費等資訊，可以參考這篇文章：[從 API 串接角度評估電子發票存摺 APP 可以怎樣出賣使用者個資](https://blog.user.today/invoice-api-problem/)
