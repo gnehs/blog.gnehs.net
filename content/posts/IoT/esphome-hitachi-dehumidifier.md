@@ -60,6 +60,12 @@ categories: ["IoT"]
 
 複製設定檔並刷入到 ESP32，測試看看接入有沒有問題，沒問題的話把 ESP32 固定好就可以把背板裝回去了
 
+## 完成
+
+弄好後大概會長這樣喔！
+
+![](/img/esphome-hitachi-dehumidifier/SCR-20250216-ppts.jpg)
+
 ## 參考資料
 
 - [xangin/TaiSEIA_ESPhome_samples](https://github.com/xangin/TaiSEIA_ESPhome_samples)
